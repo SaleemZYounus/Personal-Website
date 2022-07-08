@@ -37,26 +37,43 @@
 
 /* 
 /* b. Document Setup
-/* =================================================================== */
+/* ============================ VARS ======================================= */
+
+:root {
+  --gold           : #ffa600;
+  --peach          : #ffd890;
+  --blue-green     : #4bed99;
+  --purple-violet  : #bb68ff;
+  --blue           : #005e78;
+  --cyan           : #32c5ff;
+  --pink           : rgb(255, 193, 252);
+}
+
 
 /* Body
 ---------------------------------------------------------------------- */
 body {
-	background: #0e1015;
+	background: #ecf0f1;
 	font: 15px/30px "merriweather-regular", serif;
 	font-weight: normal;
 	color: #575859;
+		
 }
+
 
 /* Links
 ---------------------------------------------------------------------- */
+
+/* uncomment this below to return original color */
 a, a:visited {
-	color: #ffa600;
+	color: #ffffff;
+	/*border-color: var(--purple-violet);*/
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	animation: anim 10s infinite;
 }
 a:hover, a:focus {
 	color: rgb(255, 255, 255);
@@ -219,7 +236,7 @@ dl {
 }
 dt {
 	margin: 0;
-	color: #ffa600;
+	color: var(--purple-violet);
 }
 dd {
 	margin: 0 0 0 20px;
@@ -333,7 +350,7 @@ input[type="checkbox"] {
 	border-top: 1.1em solid rgba(255, 255, 255, 0.2);
 	border-right: 1.1em solid rgba(255, 255, 255, 0.2);
 	border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
-	border-left: 1.1em solid #ffa600;
+	border-left: 1.1em solid var(--purple-violet);
 	-webkit-animation: load 1.1s infinite linear;
 	animation: load 1.1s infinite linear;
 }
@@ -342,6 +359,33 @@ input[type="checkbox"] {
 	width: 60px;
 	height: 60px;
 }
+/* Color Animation */
+@keyframes myanimation {
+	0% {background: var(--gold);}
+	13%{background: var(--peach);}
+	26%{background: var(--blue-green);}
+	39%{background: var(--cyan);}
+	50% {background: var(--blue);}
+	65% {background: var(--purple-violet);}
+	80% {background: var(--pink);}
+	90% {background: #ffbd84;}
+	100% {background: var(--gold);}
+}
+	/*--- Border ---*/
+@keyframes anim {
+	0% {border-color: var(--gold);}
+	13%{border-color: var(--peach);}
+	26%{border-color: var(--blue-green);}
+	39%{border-color: var(--cyan);}
+	50% {border-color: var(--blue);}
+	65% {border-color: var(--purple-violet);}
+	80% {border-colo: var(--pink);}
+	90% {border-colo: #ffbd84;}
+	100% {border-color: var(--gold);}
+}
+
+
+
 @-webkit-keyframes load {
 	0% {
 		-webkit-transform: rotate(0deg);
@@ -410,10 +454,10 @@ input[type="button"]:hover {
 	color: white;
 }
 .button.primary, button.primary {
-	background: #ffa600;
+	background: var(--purple-violet);
 }
 .button.primary:hover, button.primary:hover {
-	background: #ffa600;
+	background: var(--purple-violet);
 }
 button.medium, .button.medium {
 	font: 15px/30px "raleway-bold", sans-serif;
@@ -733,7 +777,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #252525;
 }
 .stats-tabs li a:hover {
-	color: #ffa600;
+	color: var(--purple-violet);
 }
 .stats-tabs li a em {
 	display: block;
@@ -776,7 +820,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: white;
 }
 .pagination .current, .pagination .current:hover {
-	background-color: #ffa600;
+	background-color: var(--purple-violet);
 	color: white;
 }
 .pagination .inactive, .pagination .inactive:hover {
@@ -837,7 +881,9 @@ header .logo a {
 		-moz-background-size: 200px 25px;
 		background-size: 200px 25px;
 	}
+	
 }
+
 .opaque {
 	background: #12151b;
 }
@@ -895,7 +941,7 @@ ul#nav li a:active {
 	background-color: transparent !important;
 }
 ul#nav li.current a {
-	background: #ffa600;
+	background: var(--purple-violet);
 	color: white;
 }
 
@@ -972,7 +1018,7 @@ ul#nav li.current a {
 	color: #7d7e80;
 }
 #sidebar .link-list li a:hover {
-	color: #ffa600;
+	color: var(--purple-violet);
 }
 
 /* tag cloud */
@@ -1003,7 +1049,7 @@ ul#nav li.current a {
 }
 #sidebar .tagcloud a:hover {
 	color: white;
-	background: #ffa600;
+	background: var(--purple-violet);
 }
 
 /* photostream */
@@ -1041,10 +1087,20 @@ footer {
 	font-size: 13px;
 	line-height: 24px;
 	position: relative;
-	color: #3C4142;	
+	color: #3C4142;
+	background-color: rgb(172 210 147);
+	z-index: 5;	
 }
+/*  good colors list  ( dash because replacing all the colors will change my list of color keys)
+ #-ffd890 peach
+ #-ffa600 gold yellow
+ #-4bed99 blue green
+ #-a34bec purple violet
+ #-0381a4 blue
+ 
+*/
 footer a, footer a:visited {
-	color: #a43b0a;
+	color: #00000082;
 }
 footer a:hover, footer a:focus {
 	color: white;
@@ -1097,7 +1153,7 @@ footer #go-top {
 footer #go-top a {
 	display: block;
 	padding: 12px 30px;
-	background: #ffa600;
+	background: var(--purple-violet);
 	color: white;
 	text-align: center;
 	font: 12px/24px "raleway-heavy", sans-serif;
@@ -1123,7 +1179,7 @@ footer #go-top a:hover {
 /* =================================================================== */
 
 hr {
-	border: solid #ffa600;
+	border: solid var(--purple-violet);
 	border-width: 3px 0 0;
 	width: 90px;
 	margin: 11px auto 15px;
@@ -1145,7 +1201,7 @@ hr {
 	margin-bottom: 18px;
 }
 .section-head h1 span {
-	color: #ffa600;
+	color: var(--purple-violet);
 }
 .section-head p {
 	font: 18px/36px "merriweather-light", sans-serif;
@@ -1177,7 +1233,7 @@ hr {
 	text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);	
 }
 #page-title h1 span {
-	color: #ffa600;
+	color: var(--purple-violet);
 }
 #page-title p {
 	color: #cfd9db;
@@ -1247,9 +1303,9 @@ hr {
 	text-align: center;
 	display: inline-block;
 	background: transparent;
-	color: #ffa600;
+	color: var(--purple-violet);
 	border-radius: 3px;
-	border: 3px solid #ffa600;
+	border: 3px solid var(--purple-violet);
 	font-family: 'FontAwesome';
 	font-size: 16px;
 	padding: 21px 15px;
@@ -1268,7 +1324,7 @@ hr {
 }
 .pagenav a[rel="next"]:hover:after, .pagenav a[rel="prev"]:hover:before {
 	color: white;
-	background: #ffa600;
+	background: var(--purple-violet);
 }
 .entries .pagenav {
 	margin-top: -18px;
@@ -1374,11 +1430,11 @@ hr {
 #hero-slider .flex-caption h1 a {
 	color: white;
 	display: inline-block;
-	border-bottom: 1px solid #a43b0a;
+	border-bottom: 1px solid #ffffff;
 }
 #hero-slider .flex-caption h1 span:hover, 
 #hero-slider .flex-caption h1 a:hover {
-	border-color: #9a9103;
+	border-color: #039a72;
 }
 #hero-slider .flex-caption .button.stroke {
 	margin: 0;
@@ -1386,7 +1442,7 @@ hr {
 	width: auto;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	border-color: #ffa600;
+	border-color: var(--purple-violet);
 	color: white;
 	white-space: nowrap;
 	text-shadow: 0 0px 5px black;
@@ -1397,7 +1453,7 @@ hr {
 #hero-slider .flex-caption .button.stroke:hover {
 	color: white;
 	text-shadow: none;
-	background: #ffa600 !important;
+	background: var(--purple-violet) !important;
 }
 
 /* Slider Control Nav */
@@ -1431,10 +1487,10 @@ hr {
 	box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .hero-content .flex-control-paging li a:hover {
-	border-color: #ffa600;
+	border-color: var(--purple-violet);
 }
 .hero-content .flex-control-paging li a.flex-active {
-	border-color: #ffa600;
+	border-color: var(--purple-violet);
 	cursor: default;
 }
 
@@ -1466,6 +1522,9 @@ hr {
 	display: block;
 	cursor: pointer;
 }
+
+
+
 .item .item-wrap .overlay {
 	background: #00000078;
 	position: absolute;
@@ -1538,6 +1597,74 @@ hr {
 	transform: scale(1.2);
 }
 
+/* working resume*/
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    --btn-height            : auto;
+    display                 : flex;
+    font                    : 14px/30px "raleway-bold", sans-serif;
+    font-weight             : bolder;
+    font-size               : 20px;
+    text-transform          : uppercase;
+    letter-spacing          : .18em;
+    height                  : 50px;
+    line-height             : 30px;
+    padding-left            : 130px;
+    margin                  : 0 auto;
+	text-align              : center;
+	vertical-align          : baseline;
+    transition              : all .4s;
+    border-radius           : 6% / 50%;
+    border                  : 3px solid;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background       : var(--purple-violet);
+    border-color     : hsl(0, 0%, 100%);
+    outline          : 100;
+	color            : #ffffff;
+}
+.btn.u-fullwidth,
+button.u-fullwidth {
+    width        : 500px;
+	padding-bottom: 30px;
+	padding-top: 8px;
+}
+@media (max-width: 500px) {
+	/* CSS that should be displayed if width is equal to or less than 800px goes here */
+	.btn.u-fullwidth,
+	button.u-fullwidth {
+    	width        : 100%;
+		padding-bottom: 30px;
+		padding-top: 8px;
+		padding-left: 80px;
+}
+
+  }
+.btn--stroke, button.stroke{
+	color: rgb(249, 249, 249);
+	background: #12151b url(../images/hero-bg.jpg) center fixed;
+	background-repeat: repeat;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	background-size: cover !important;
+	padding-top: 108px;
+	padding-bottom: 60px;
+	text-align: center;
+	
+}
+
+
+
 /* 
 /*  m. Services Section
 /* =================================================================== */
@@ -1555,14 +1682,17 @@ hr {
 	margin-bottom: 15px;
 	padding: 0 22px;
 }
+/* uncomment this below to return original color */
 .service-list .icon-part {
-	background: #ffa600;
-	color: white;
+	/*background: var(--purple-violet);*/ 
+	animation: myanimation 10s infinite;
+	color: rgb(255, 255, 255);
 	width: 72px;
 	padding: 15px 3px;
 	font-size: 40px;
 	border-radius: 3px;
 	margin: 0 auto;
+
 }
 .service-list h3 {
 	font: 16px/24px "raleway-heavy", sans-serif;
@@ -1629,7 +1759,7 @@ hr {
 	width: 78px;
 	height: 78px;
 	display: inline-block;
-	position: relative;
+	position: static;
 	top: 12px;
 }
 #team-wrapper .member-pic img {
@@ -1650,11 +1780,11 @@ hr {
 	top: -6px;
 	font-size: 13px;
 	line-height: 18px;
-	color: #ffa600;
+	color: var(--purple-violet);
 	display: block;
 }
 #team-wrapper .member-social {
-	font-size: 18px;
+	font-size: 28px;
 	font-weight: normal;
 	line-height: 24px;
 	margin: 12px 0 0 0;
@@ -1668,7 +1798,7 @@ hr {
 	color: #252525;
 }
 #team-wrapper .member-social li a:hover {
-	color: #ffa600;
+	color: var(--purple-violet);
 }
 
 
@@ -1676,7 +1806,7 @@ hr {
 /*  o. Journal Section
 /* =================================================================== */
 #journal {
-	background: #ffa600 url(../images/blog-bg.jpg) no-repeat bottom center fixed;
+	background: var(--purple-violet) url(../images/blog-bg.jpg) no-repeat bottom center fixed;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
@@ -1694,7 +1824,7 @@ hr {
 }
 #journal h5 {
 	font-size: 13px;
-	color: #ffa600;
+	color: var(--purple-violet);
 	margin: 0;
 }
 #journal p {
@@ -1738,7 +1868,7 @@ hr {
 	display: none;
 }
 #contact label span {
-	color: #ffa600;
+	color: var(--purple-violet);
 	display: inline-block;
 }
 #contact input, 
@@ -1767,13 +1897,13 @@ hr {
 	margin-bottom: 36px;
 	line-height: 24px;
 	display: block;
-	border: 3px solid #ffa600;
-	color: #ffa600;
+	border: 3px solid var(--purple-violet);
+	color: var(--purple-violet);
 	background: transparent;
 }
 #contact button.submit:hover {
 	color: white;
-	background: #ffa600;
+	background: var(--purple-violet);
 }
 
 /* for ie9 and lower */
@@ -1847,7 +1977,7 @@ hr {
 	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #ffa600;
+	color: var(--purple-violet);
 }
 .entry .tags a:hover {
 	color: #12151b;
@@ -1948,21 +2078,21 @@ hr {
 	width: 100%;
 }
 #comments form span.required {
-	color: #ffa600;
+	color: var(--purple-violet);
 	font-size: 15px;
 }
 #comments form button {
 	padding-left: 24px;
 	padding-right: 24px;
-	color: #ffa600 !important;
-	border-color: #ffa600 !important;
+	color: var(--purple-violet) !important;
+	border-color: var(--purple-violet) !important;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 0;
 }
 #comments form button:hover {
 	color: white !important;
-	background: #ffa600 !important;
+	background: var(--purple-violet) !important;
 }
 
 

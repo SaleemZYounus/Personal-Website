@@ -61,7 +61,7 @@
 		right: 0;
 	}
 	#nav-wrap > a {
-		background: #ffa600;
+		background: var(--purple-violet);
 		border: none;
 		color: white;
 		height: 60px;
@@ -144,7 +144,7 @@
 	}
 	#nav-wrap ul#nav li.current > a {
 		background: none;
-		color: #ffa600;
+		color: var(--purple-violet);
 	}
 	.js #nav-wrap a.mobile-btn {
 		display: none;
@@ -303,8 +303,8 @@
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		margin-left: -100px;
-		margin-top: -39px;
+		margin-left: -50%;
+		margin-top: -20;
 	}
 	#team-wrapper .member-name { margin-left: 85px;	}
 	#team-wrapper .member-name h3, #team-wrapper .member-name span {
