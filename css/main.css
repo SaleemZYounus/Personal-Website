@@ -43,10 +43,10 @@
   --gold           : #ffa600;
   --peach          : #ffd890;
   --blue-green     : #4bed99;
-  --purple-violet  : #bb68ff;
+  --purple-violet  : #aa80d4;
   --blue           : #005e78;
   --cyan           : #32c5ff;
-  --pink           : rgb(255, 193, 252);
+  --pink           : rgb(255, 182, 251);
 }
 
 
@@ -379,13 +379,22 @@ input[type="checkbox"] {
 	39%{border-color: var(--cyan);}
 	50% {border-color: var(--blue);}
 	65% {border-color: var(--purple-violet);}
-	80% {border-colo: var(--pink);}
-	90% {border-colo: #ffbd84;}
+	80% {border-color: var(--pink);}
+	90% {border-color: #ffbd84;}
 	100% {border-color: var(--gold);}
 }
+@keyframes anim2 {
+	0% {box-shadow: 0px 0px 20px var(--gold);}
+	13%{box-shadow: 0px 0px 20px var(--peach);}
+	26%{box-shadow: 0px 0px 20px var(--blue-green);}
+	39%{box-shadow: 0px 0px 20px var(--cyan);}
+	50% {box-shadow: 0px 0px 20px var(--blue);}
+	65% {box-shadow: 0px 0px 20px var(--purple-violet);}
+	80% {box-shadow: 0px 0px 20px var(--pink);}
+	90% {box-shadow: 0px 0px 20px #ffbd84;}
+	100% {box-shadow: 0px 0px 20px var(--gold);}
 
-
-
+}
 @-webkit-keyframes load {
 	0% {
 		-webkit-transform: rotate(0deg);
@@ -846,6 +855,7 @@ header {
 	-webkit-transition: background 0.5s ease-in-out;
 	-ms-transition: background 0.5s ease-in-out;
 	transition: background 0.5s ease-in-out;
+	box-shadow: none;
 }
 header .logo {
 	display: inline-block;
@@ -873,6 +883,8 @@ header .logo a {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-image: url("../images/logo.png");
+	box-shadow: none;
+	
 }
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
 	header .logo a {
@@ -927,7 +939,7 @@ ul#nav li a {
 	padding: 17px 12px;
 	line-height: 38px;
 	text-decoration: none;
-	color: #c0cdd1;
+	color: #efe4ff;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -935,14 +947,15 @@ ul#nav li a {
 	transition: all 0.2s ease-in-out;
 }
 ul#nav li a:hover {
-	color: white;
+	color: rgba(236, 190, 255, 0.543);
 }
 ul#nav li a:active {
 	background-color: transparent !important;
 }
 ul#nav li.current a {
 	background: var(--purple-violet);
-	color: white;
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 15px var(--purple-violet);
 }
 
 
@@ -1090,6 +1103,7 @@ footer {
 	color: #3C4142;
 	background-color: rgb(172 210 147);
 	z-index: 5;	
+	
 }
 /*  good colors list  ( dash because replacing all the colors will change my list of color keys)
  #-ffd890 peach
@@ -1442,13 +1456,14 @@ hr {
 	width: auto;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	border-color: var(--purple-violet);
+	border-color: #d6b5ff;
 	color: white;
 	white-space: nowrap;
 	text-shadow: 0 0px 5px black;
 	-webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
+	animation:anim2 10s infinite; /*THIS IS THE THING THAT CONTROLS THE SHODOW*/
 }
 #hero-slider .flex-caption .button.stroke:hover {
 	color: white;
@@ -1485,13 +1500,16 @@ hr {
 	-webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
+	
 }
 .hero-content .flex-control-paging li a:hover {
 	border-color: var(--purple-violet);
+	
 }
 .hero-content .flex-control-paging li a.flex-active {
 	border-color: var(--purple-violet);
 	cursor: default;
+	
 }
 
 /* 
@@ -1621,6 +1639,8 @@ input[type="button"] {
     border                  : 3px solid;
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
+	box-shadow: 0px 0px 40px var(--purple-violet);
+	animation: anim2 10s infinite;
 }
 
 .btn:hover,
