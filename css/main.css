@@ -43,10 +43,16 @@
   --gold           : #ffa600;
   --peach          : #ffd890;
   --blue-green     : #4bed99;
-  --purple-violet  : #aa80d4;
+  --purple-violet  : #be94e7;
   --blue           : #005e78;
   --cyan           : #32c5ff;
   --pink           : rgb(255, 182, 251);
+  /* pastels */
+  --p1 :#E0BBE4;
+  --p2 :#BFA9D9;
+  --p3 :#CDBEE6;
+  --p4 :#f4c6fe;
+  --p5 :#FFDFD3;
 }
 
 
@@ -54,10 +60,12 @@
 ---------------------------------------------------------------------- */
 body {
 	background: #ecf0f1;
+	
 	font: 15px/30px "merriweather-regular", serif;
 	font-weight: normal;
 	color: #575859;
-		
+	animation: anim4 20s ease infinite;
+	
 }
 
 
@@ -384,16 +392,25 @@ input[type="checkbox"] {
 	100% {border-color: var(--gold);}
 }
 @keyframes anim2 {
-	0% {box-shadow: 0px 0px 20px var(--gold);}
-	13%{box-shadow: 0px 0px 20px var(--peach);}
+	0% {box-shadow: 0px 0px 20px white;}
 	26%{box-shadow: 0px 0px 20px var(--blue-green);}
 	39%{box-shadow: 0px 0px 20px var(--cyan);}
 	50% {box-shadow: 0px 0px 20px var(--blue);}
 	65% {box-shadow: 0px 0px 20px var(--purple-violet);}
 	80% {box-shadow: 0px 0px 20px var(--pink);}
-	90% {box-shadow: 0px 0px 20px #ffbd84;}
-	100% {box-shadow: 0px 0px 20px var(--gold);}
-
+	100% {box-shadow: 0px 0px 20px white;}
+}
+/* pastel backgroud animation*/
+@keyframes anim4 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 @-webkit-keyframes load {
 	0% {
@@ -1101,9 +1118,13 @@ footer {
 	line-height: 24px;
 	position: relative;
 	color: #3C4142;
-	background-color: rgb(172 210 147);
+	background: rgb(172 210 147);
 	z-index: 5;	
-	
+	animation: anim4 5s infinite;
+	background: linear-gradient(45deg, #06b382, #15d9f3, rgb(122, 99, 255) ),
+				linear-gradient(90deg, rgb(125, 17, 226), #009353, rgb(0, 238, 255)),
+				linear-gradient(-10deg, rgb(0, 0, 0), rgb(82, 218, 255), rgb(0, 0, 0) 78.71%);	
+	background-size: 120% 100%;
 }
 /*  good colors list  ( dash because replacing all the colors will change my list of color keys)
  #-ffd890 peach
@@ -1183,7 +1204,7 @@ footer #go-top a span {
 	margin-right: 10px;
 }
 footer #go-top a:hover {
-	background: #faec09;
+	background: #b0a5ff;
 	color: #252525;
 }
 
@@ -1208,19 +1229,19 @@ hr {
 	text-align: center;
 }
 .section-head h1 {
-	font: 15px/24px "raleway-heavy", sans-serif;
+	font: 16px/24px "raleway-heavy", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
-	color: #252525;
+	color: #7f7f7f;
 	margin-bottom: 18px;
 }
 .section-head h1 span {
 	color: var(--purple-violet);
 }
 .section-head p {
-	font: 18px/36px "merriweather-light", sans-serif;
+	font: 22px/36px "merriweather-light", sans-serif;
 	width: 95%;
-	color: #707273;
+	color: #e0cdff;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1352,13 +1373,13 @@ hr {
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
-	padding-top: 66px;
-	padding-bottom: 90px;
+	padding-top: 150px;
+	padding-bottom: 60px;
 	width: 100%;
 	text-align: center;
 	position: relative;
 }
-.ie8 #hero { background: #12151b; }
+.ie8 #hero { background: #b3ccff; }
 
 /* Flex slider settings
 /* ------------------------------------------------------------------ */
@@ -1442,21 +1463,23 @@ hr {
 }
 #hero-slider .flex-caption h1 span, 
 #hero-slider .flex-caption h1 a {
-	color: white;
+	color: rgb(0, 0, 0);
 	display: inline-block;
-	border-bottom: 1px solid #ffffff;
+	text-shadow: 0px 0px 7px rgb(167, 112, 235);
 }
+
 #hero-slider .flex-caption h1 span:hover, 
 #hero-slider .flex-caption h1 a:hover {
-	border-color: #039a72;
-}
+	color: rgb(227, 189, 255);
+	display: inline-block;
+	text-shadow: 0px 0px 25px rgb(255, 255, 255);}
 #hero-slider .flex-caption .button.stroke {
 	margin: 0;
 	padding: 9px 20px;
 	width: auto;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	border-color: #d6b5ff;
+	border-color: #dcc0ff;
 	color: white;
 	white-space: nowrap;
 	text-shadow: 0 0px 5px black;
@@ -1516,8 +1539,13 @@ hr {
 /* l. Portfolio Section
 /* =================================================================== */
 #portfolio {
-	background: white;
+	background: linear-gradient(0deg, #ffffffcb, #86f7ff00, rgb(0, 0, 0) ),
+				linear-gradient(130deg, rgb(134, 6, 255), rgb(212, 165, 255), rgb(56, 235, 255), #00a460c6, #788626, rgb(207, 1, 107), rgb(31, 187, 253), rgb(4, 255, 255) );	
+	background-size: 600% 100%;
 	padding-top: 120px;
+	padding-bottom: 140px;
+	animation: anim4 40s infinite;
+	box-shadow: 0px 0px 30px white;
 }
 .ie #portfolio .row.items {
 	width: 1140px;
