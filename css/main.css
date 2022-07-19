@@ -64,7 +64,7 @@ body {
 	font: 15px/30px "merriweather-regular", serif;
 	font-weight: normal;
 	color: #575859;
-	animation: anim4 34s infinite;
+	animation: anim4 30s infinite;
 	
 }
 
@@ -432,6 +432,8 @@ input[type="checkbox"] {
 		transform: rotate(360deg);
 	}
 }
+
+
 
 /* for ie8 */
 .ie8 #status img {
@@ -1538,11 +1540,11 @@ hr {
 	font-size: 45px;
 	font-weight: normal;
 	line-height: 15px;
-	margin: 15px 15px 0 0;
+	margin: 20px 15px 0 0;
 	display: inline-block;
 	margin-right: 40px;
-	padding-left: 10px;
-	padding-bottom: 90px;
+	padding-left: 20px;
+	padding-bottom: 40px;
 	white;
 	text-shadow: 0px 0px 20px #ffffff;
 }
@@ -1567,11 +1569,11 @@ hr {
 .fa:hover + .hide {
 	display: block;
   	color: rgb(255, 255, 255);
-  	padding-left: 54%;
+  	padding-left: 185px;
   	padding-bottom: 50px;
 	font: 20px/15px"raleway-bold", sans-serif;
 	text-transform: Uppercase;
-	text-align: left;
+	text-align: center;
 	text-shadow: 0px 0px 20px #ffffff;
 }
 @keyframes hide {
