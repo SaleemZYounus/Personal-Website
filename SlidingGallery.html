@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                outline: 0;
+                font-family: "Gill Sans", "Gill Sans MT", Calibri;
+                direction: ltr;
+            }
+
+
+            :root {
+                --theme: rgb(110, 255, 185);
+            }
+
+            @media(min-width: 768px) {
+                .image-slider-container {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            .image-slider-container .image-slider-heading {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px;
+            }
+
+            .image-slider-container .image-slider-heading h2 {
+                font-size: 25px;
+                color: #ffffff;
+            }
+
+            .image-slider-container .image-slider-heading .swiper-pagination {
+                position: relative;
+                width: auto;
+                padding: 0;
+                margin: 0;
+                top: 0;
+                bottom: 0;
+            }
+
+            .image-slider-container .image-slider-heading .swiper-pagination .swiper-pagination-bullet {
+                background-color: #e4e4e4;
+                opacity: 100%;
+                width: 20px;
+                height: 20px;
+                border-radius: 100px;
+                transition: 0.5s;
+                margin: 10px 3px;
+            }
+
+            .image-slider-container .image-slider-heading .swiper-pagination .swiper-pagination-bullet-active {
+                background-color: var(--theme);
+                width: 300px;
+            }
+
+            .image-slider-container .swiper {
+                position: relative;
+            }
+
+            .image-slider-container .swiper .swiper-slide {
+                width: 450px;
+                height: 600px;
+
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con {
+                overflow: hidden;
+                height: 600px;
+                margin: 0;
+                position: relative;
+                border-radius: 20px;
+            }
+
+         
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info {
+                text-align: left;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info h2 {
+                font-size: 15px;
+                padding: 5px 0;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info span {
+                font-size: 13px;
+                margin-right: 0;
+                color: #ffffff;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a {
+                text-decoration: none;
+                color: white;
+                padding: 5px;
+                font-size: 13px;
+                margin: 0 3px;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                color: white;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a svg {
+                font-size: 15px;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a:hover {
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .imdb-rate {
+                width: 100%;
+                font-size: 10px;
+                color: #ffd900;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .imdb-rate:hover {
+                background-color: #ecc900;
+                color: black;
+                border: 0;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .like:hover {
+                color: white;
+                background-color: #ff2a00;
+                border: 0;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .show-movie:hover {
+                color: white;
+                background-color: #2a4aff;
+                border: 0;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con:hover .slide-details {
+                display: flex;
+            }
+
+            .image-slider-container .swiper .swiper-slide .slide-con:hover div.movie-info {
+                animation: 30s 1 m;
+            }
+
+            .image-slider-container .swiper .swiper-slide img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                box-shadow: 0 3px 15px rgb(168, 101, 101);
+            }
+        </style>
+
+        <title>My Page</title>
+    </head>
+    <body>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+
+        <section class="image-slider-container">
+            <div class="image-slider-heading">
+                <h2 class="image-slider-title">
+                    Art Gallery
+                </h2>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-con">
+
+                            <iframe src="https://www.instagram.com/p/CEZuNlFlHNc/embed" width="450" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+
+                            <div class="slide-details">
+                                <div class="movie-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-con">
+                            <iframe src="https://www.instagram.com/p/CmXgF_fBTDB/embed" width="450" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+
+                            <div class="slide-details">
+                                <div class="movie-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-con">
+                            <iframe src="https://www.instagram.com/p/ClXCfxyBBfw/embed" width="450" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+
+                            <div class="slide-details">
+                                <div class="movie-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-con">
+                            <iframe src="https://www.instagram.com/p/ClAFPx_h_6C/embed" width="450" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                            <div class="slide-details">
+                                <div class="movie-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-con">
+                            <iframe src="https://www.instagram.com/p/CJCZAFNlpfW/embed" width="450" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                            <div class="slide-details">
+                                <div class="movie-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-con">
+                            <iframe src="https://www.instagram.com/p/CLAMKitFPTV/embed" width="450" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                            <div class="slide-details">
+                                <div class="movie-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-con">
+                            <iframe src="https://www.instagram.com/p/BoFGSPugMBA/embed" width="450" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                            <div class="slide-details">
+                                <div class="movie-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-con">
+                            <iframe src="https://www.instagram.com/p/BqDedsNFADo/embed" width="450" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                            <div class="slide-details">
+                                <div class="movie-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slide-con">
+                          <iframe src="https://www.instagram.com/p/Blbo4PWgxK-/embed" width="450" height="600" frameborder="0" scrolling="yes" allowtransparency="true"></iframe>
+                          <div class="slide-details">
+                              <div class="movie-info">
+                                
+                              </div>
+                          </div>
+                      </div>
+                </div>
+
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+            new Swiper(".swiper", {
+                loop: true,
+                effect: 'coverflow',
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                speed: 1000,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+
+                },
+
+                breakpoints: {
+                    768: {
+                        centeredSlides: false,
+                        coverflowEffect: {
+
+                            depth: 0,
+
+                            rotate: 0,
+
+                            stretch: -10
+
+
+                        }
+                    }
+                },
+                autoplay: {
+                    delay: 3000
+                },
+                coverflowEffect: {
+                    depth: 80,
+                    rotate: 50,
+                    stretch: 20
+
+                }
+            })
+        </script>
+
+
+    </body>
+</html>

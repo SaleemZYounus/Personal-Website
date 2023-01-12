@@ -232,8 +232,8 @@ hr {
 /* Lists
 --------------------------------------------------------------------- */
 ul, ol {
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-bottom: 60px;
 }
 ul {
 	list-style: disc;
@@ -877,8 +877,7 @@ header {
 	-webkit-transition: background 0.5s ease-in-out;
 	-ms-transition: background 0.5s ease-in-out;
 	transition: background 0.5s ease-in-out;
-	box-shadow: none;
-}
+	box-shadow: 0px 0px 100px 1px #9573cca7;}
 header .logo {
 	display: inline-block;
 	vertical-align: middle;
@@ -977,8 +976,7 @@ ul#nav li a:active {
 ul#nav li.current a {
 	background: var(--purple-violet);
 	color: rgb(255, 255, 255);
-	box-shadow: 0px 0px 15px var(--purple-violet);
-}
+	box-shadow: 0px 0px 10px 5px #ab7cda;}
 
 
 /* 
@@ -1204,6 +1202,7 @@ footer #go-top a {
 	-webkit-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	box-shadow: 0px 0px 10px 5px #ab7cda;
 }
 footer #go-top a span {
 	margin-right: 10px;
@@ -1237,7 +1236,7 @@ hr {
 	font: 16px/24px "raleway-heavy", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
-	color: #7f7f7f;
+	color: #d4b0ff;
 	margin-bottom: 18px;
 }
 .section-head h1 span {
@@ -1246,7 +1245,7 @@ hr {
 .section-head p {
 	font: 22px/36px "merriweather-light", sans-serif;
 	width: 95%;
-	color: #e0cdff;
+	color: #f2eaff;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1548,7 +1547,7 @@ hr {
 	margin-right: 40px;
 	padding-left: 20px;
 	padding-bottom: 40px;
-	white;
+	
 	text-shadow: 0px 0px 20px #ffffff;
 }
 .fa:hover {
@@ -1573,12 +1572,13 @@ hr {
 	display: block;
   	color: rgb(255, 255, 255);
   	padding-left: 185px;
-  	padding-bottom: 50px;
+  	padding-bottom: 0px;
 	font: 20px/15px"raleway-bold", sans-serif;
 	text-transform: Uppercase;
 	text-align: center;
 	text-shadow: 0px 0px 20px #ffffff;
 }
+
 @keyframes hide {
 	from {
 	  margin-left: -500px;
@@ -1588,10 +1588,11 @@ hr {
 	  margin-left: 0%;
 	}
   }
+  
 /* 
 /* l. Portfolio Section
 /* =================================================================== */
-#portfolio {
+#portfolio, #content {
 	background: linear-gradient(0deg, #ffffffcb, #86f7ff00, rgb(0, 0, 0) ),
 				linear-gradient(130deg, rgb(134, 6, 255), rgb(212, 165, 255), rgb(56, 235, 255), #00a460c6, #788626, rgb(207, 1, 107), rgb(31, 187, 253), rgb(4, 255, 255) );	
 	background-size: 600% 100%;
@@ -1881,7 +1882,7 @@ button.u-fullwidth {
 	top: -6px;
 	font-size: 13px;
 	line-height: 18px;
-	color: var(--purple-violet);
+	color: #291163;
 	display: block;
 }
 #team-wrapper .member-social {

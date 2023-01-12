@@ -2,312 +2,688 @@
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
+<!--[if (gte IE 9)|!(IE)]><!-->
+    <html
+    class="no-js" lang="en"> <!--<![endif]-->
+    <head>
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Portfolio - Puremedia</title>
-	<meta name="description" content="">  
-	<meta name="author" content="">
+        <!--- Basic Page Needs
+                                   ================================================== -->
+        <meta charset="utf-8">
+        <title>Portfolio - Art Projects</title>
+        <meta name="description" content="">
+        <meta
+        name="author" content="">
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Mobile Specific Metas
+                                   ================================================== -->
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/media-queries.css">         
+        <!-- CSS
+                                    ================================================== -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link
+        rel="stylesheet" href="css/media-queries.css">
 
-   <!-- Script
-   =================================================== -->
-	<script src="js/modernizr.js"></script>
+        <!-- Script
+                                   =================================================== -->
+        <script src="js/modernizr.js"></script>
 
-   <!-- Favicons
-	=================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+        <!-- Favicons
+                                	=================================================== -->
+        <link rel="shortcut icon" href="favicon.png">
+        <style>
 
-</head>
+            body {
+                background: linear-gradient(#000000, #71e8b4);
+                color: rgba(255, 255, 255, 0);
+            }
+            header {
+                box-shadow: 0 0 100px 1px #71e8b4;
+            }
+            .section-head h1,
+            #page-title p,
+            #page-title h1 {
+                margin: 25px;
+                color: #ffffff;
+                text-shadow: 0 1px 10x #75ffb8;
+            }
+            #page-title {
+    
+    padding-top: 186px;
+    padding-bottom: 125px;
+    text-align: center;
+}
+ul, ol {
+    margin-top: -153px;
+    margin-bottom: 51px;
+}
+.fa{
+    text-shadow: 0px 0px 20px #71e8b4;
+}
+.fa:hover {
+	color: #9affcb;
+	text-shadow: 0px 0px 5px #000000;
 
-<body>
+} 
+            #portfolio,
+            #content {
+                background: linear-gradient(0deg, #ffffffcb, #86f7ff00, rgba(112, 248, 160, 0.65)), linear-gradient(130deg, rgb(134, 6, 255), rgb(212, 165, 255), rgb(56, 235, 255), #00a460c6, #788626, rgb(207, 1, 107), rgb(31, 187, 253), rgb(4, 255, 255));
+                background-size: 600% 100%;
+                padding-top: 60px;
+                padding-bottom: 140px;
+                animation: anim4 40s infinite;
+                box-shadow: 0 0 30px rgb(255, 255, 255);
+            }
+            a,
+            h1,
+            p {
+                color: rgb(224, 224, 224);
+                margin: 0;
 
-   <div id="top"></div>
-   <div id="preloader"> 
-	   <div id="status">
-         <img src="images/loader.gif" height="60" width="60" alt="">
-         <div class="loader">Loading...</div>
-      </div>
-   </div>
+            }
+            .gist {
+                font-size: 28px
+            }
+            .gist-meta,
+            .gist-file,
+            .clone-url-button > .clone-url-link {
+                background: linear-gradient(#000000, #71e8b4) !important;
+                border-color: #000000 !important;
+                border-radius: 30px 30px 30px 30px !important;
+                text-shadow: none !important;
+                color: #bd1d1d00 !important;
+                margin-right: 120px;
+                margin-left: 120px;
+                box-shadow: 0 0 100px 9px #71e8b4;
+            }
+            ul#nav li.current a,
+            footer #go-top a {
+                background: #71e8b4;
+                box-shadow: 0 0 10px 5px #71e8b4;
+            }
+            footer #go-top a:hover {
+                background: #ffd2d2;
+            }
+            .highlight {
+                background: linear-gradient(#000000, #71e8b4) !important;
+                color: #C5C8C6 !important;
 
-   <!-- Header
-   =================================================== -->
-   <header id="main-header">
+            }
+            .gist .blob-code {
+                padding: 5px 10px !important;
+                text-align: left;
+                background: rgba(107, 112, 126, 0);
+                border: 0;
 
-   	<div class="row header-inner">
+            }
 
-	      <div class="logo">
-	         <a href="index.html">Puremedia.</a>
-	      </div>
-
-	      <nav id="nav-wrap">         
-	         
-	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
-	         	<span class='menu-text'>Show Menu</span>
-	         	<span class="menu-icon"></span>
-	         </a>
-         	<a class="mobile-btn" href="#" title="Hide navigation">
-         		<span class='menu-text'>Hide Menu</span>
-         		<span class="menu-icon"></span>
-         	</a>         
-
-	         <ul id="nav" class="nav">
-	            <li><a href="index.html#hero">Home.</a></li>
-		         <li class="current"><a href="index.html#portfolio">Works.</a></li>
-	            <li><a href="index.html#services">Services.</a></li>
-	            <li><a href="index.html#about">About.</a></li>
-	            <li><a href="index.html#journal">Blog.</a></li>	        
-	            <li><a href="index.html#contact">Contact.</a></li>
-	         </ul> 
-
-	      </nav> <!-- /nav-wrap -->	      
-
-	   </div> <!-- /header-inner -->
-
-   </header>
-
-
-   <!-- Page Title
-   ================================================== -->
-   <section id="page-title">	
-   	  
-		<div class="row">
-
-			<div class="twelve columns">
-
-				<h1>Portfolio<span>.</span></h1>
-				<p>Aenean condimentum lacus sit amet luctus lobortis.</p>
-
-			</div>			    
-
-		</div> <!-- /row -->	   
-
-   </section> <!-- /page-title -->
-
-
-   <!-- Content
-   ================================================== -->
-   <section id="content">
-
-   	<div class="row portfolio-content">
-
-	   	<div class="entry tab-whole nine columns centered">
-
-	         <header class="entry-header">
-
-					<h1 class="entry-title">
-							Coffee Cup
-					</h1> 				 
-						
-					<div class="entry-meta">
-						<ul>
-							<li>July 12, 2014</li>
-							<span class="meta-sep">•</span>								
-							<li>
-								<a rel="skills tag" title="" href="#">Branding</a>, 
-								<a rel="skills tag" title="" href="#">Photography</a>
-							</li>
-							<span class="meta-sep">•</span>
-							<li><a rel="client" title="" href="#">styleshout</a></li>
-						</ul>
-					</div> 
-						 
-				</header>
-
-				<div class="entry-content">
-					<p class="lead">Lorem ipsum Nisi enim est proident est magna occaecat dolore proident eu ex sunt consectetur consectetur dolore enim nisi exercitation adipisicing magna culpa commodo deserunt ut do Ut occaecat.</p>
-
-					<p>Lorem ipsum Nisi enim est proident est magna occaecat dolore proident eu ex sunt consectetur consectetur dolore enim nisi exercitation adipisicing magna culpa commodo deserunt ut do Ut occaecat. Lorem ipsum Veniam consequat quis aliquip dolore minim ex labore dolor Excepteur Duis velit in officia Excepteur officia officia officia cillum ut elit in fugiat incididunt ea ad Ut ut ea ea dolor ex dolor eu magna voluptate irure consectetur.</p>
-				</div>
-
-				<div class="entry-content-media">
-					<div class="post-thumb">
-						<img src="images/portfolio/b-coffee-02.jpg">
-						<img src="images/portfolio/b-coffee-01.jpg">
-					</div> 
-				</div> 					 
-
-				<div class="pagenav group">
-		  			  <span class="prev"><a href="#" rel="prev">Previous</a></span>
-		  			<span class="next"><a href="#" rel="next">Next</a></span>  				   
-	  			</div>  										   
-	         
-	      </div> <!-- /entry -->	      
-
-	   </div> <!-- /portfolio-content -->
-	   
-
-		<div class="row more-projects">
-
-		   <h1>More Projects.</h1> 
-
-			<div class="tab-whole nine columns centered">
-
-	         <div id="portfolio-wrapper" class="bgrid-half tab-bgrid-halfgroup">
-
-	          	<div class="bgrid item">
-	               <div class="item-wrap">
-
-	                  <a href="portfolio.html">
-                        <img src="images/portfolio/beetle.jpg" alt="Beetle">                      
-                        <div class="overlay">
-                        	<div class="portfolio-item-meta">
-          					      <h5>Beetle</h5>
-                              <p>Branding</p>
-          					   </div>
-                        </div>                        
-                     </a>
-
-	               </div>
-	          	</div> <!-- /item -->
-
-	            <div class="bgrid item">
-	               <div class="item-wrap">
-
-	                  <a href="portfolio.html">
-                        <img src="images/portfolio/banjo-player.jpg" alt="Banjo Player">
-                        <div class="overlay">
-                        	<div class="portfolio-item-meta">
-          					      <h5>Banjo Player</h5>
-                              <p>Videography</p>
-          					   </div>
-                        </div>                       
-                     </a>
-
-	               </div>
-	          	</div> <!-- item end -->
-
-	            <div class="bgrid stack item">
-	               <div class="item-wrap">
-
-	                 <a href="portfolio.html">                        
-                        <img src="images/portfolio/judah.jpg" alt="Judah">                       
-                        <div class="overlay">
-                        	<div class="portfolio-item-meta">
-          					      <h5>no</h5>
-                              <p>Web Design</p>
-          					   </div>
-                        </div>                        
-                     </a>    
-
-	               </div>
-	         	</div> <!-- item end -->
-
-	            <div class="bgrid item">
-	               <div class="item-wrap">
-
-	                  <a href="portfolio.html">
-                        <img src="images/portfolio/grizzly.jpg" alt="Grizzly">
-                        <div class="overlay"></div>                       
-                        <div class="portfolio-item-meta">
-          					      <h5>Grizzly</h5>
-                              <p>Photography</p>
-          					</div>                         
-                     </a>   
-
-	               </div>
-	         	</div> <!-- item end -->               
-
-	         </div> <!-- /portfolio-wrapper -->
-
-	      </div> <!-- /nine -->
-
-		</div> <!-- /more-projects --> 
-
-   </section> <!-- /content -->  
+            .blob-code,
+            .blob-code-inner {
+                color: #ccc5e5 !important
+            }
+            .row .nine {
+                width: 95%;
+            }
 
 
-   <!-- Footer
-   ================================================== -->
-   <footer>
+            .pagenav a[rel="prev"]:before {
+                content: "\f053";
+                margin-right: 930px;
+            }
+            .pagenav a[rel="next"]:after,
+            .pagenav a[rel="prev"]:before {
+                float: left;
+                text-align: center;
+                display: inline-block;
+                background: #eb272700;
+                color: #ffffff;
+                border-radius: 3px;
+                border: 3px solid #71e8b4;
+                font-family: 'FontAwesome';
+                font-size: 16px;
+                padding: 21px 15px;
 
-      <div class="row">       
+            
+            }
+            .entry-content-media .post-thumb, .bgrid-half{
+                width: 74%;
+    margin-left: 13%;
+}
+#team-wrapper {
+    margin: 6px 0px 0 -18px;
+}
+footer {
+    padding-top: 16px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 24px;
+    position: relative;
+    color: #000000;
+    background: rgb(172 210 147);
+    z-index: 5;
+    animation: anim4 5s infinite;
+    background: linear-gradient(45deg, #06b38296, #15d9f38f, rgba(122, 99, 255, 0.498) ), linear-gradient(180deg, rgb(255, 255, 255), #4edfa1, rgb(0, 0, 0));
+    background-size: 220% 100%;
+}
+footer a, footer a:visited {
+    color: #57af9a;
+}
+hr {
+    border: solid #6affbc;
+    border-width: 3px 0 0;
+    width: 90px;
+}
+        </style>
+    </head>
 
-         <div class="six columns tab-whole footer-about">
-				
-				<h3>About Puremedia</h3>
-               
-            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-            nibh id elit. 
-            </p>
+    <body style="opacity: 5;">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-            	incididunt ut labore et dolore magna aliqua.</p>        
+        <div id="top"></div>
+        <div id="preloader">
+            <div id="status">
+                <img src="images/loader.gif" height="60" width="60" alt="">
+                <div class="loader">Loading...</div>
+            </div>
+        </div>
 
-         </div> <!-- /footer-about -->
+        <!-- Header
+                                   =================================================== -->
+        <header id="main-header">
 
-         <div class="six columns tab-whole right-cols">
+            <div class="row header-inner">
+
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+
+                <nav id="nav-wrap">
+
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+                        <span class='menu-text'>Show Menu</span>
+                        <span class="menu-icon"></span>
+                    </a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">
+                        <span class='menu-text'>Hide Menu</span>
+                        <span class="menu-icon"></span>
+                    </a>
+
+                    <ul id="nav" class="nav">
+                        <li>
+                            <a href="index.html#hero">Home.</a>
+                        </li>
+                        <li>
+                            <a href="index.html#portfolio">Projects.</a>
+                        </li>
+                        <li>
+                            <a href="index.html#services">Skills.</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about">About.</a>
+                        </li>
+                        
+                        <li class="current">
+                            <a class="smoothscroll" href="#top">
+                                <span>Art.</span>
+                                <i></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">Contact.</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- /nav-wrap -->
+
+            </div>
+            <!-- /header-inner -->
+
+        </header>
+
+
+        <!-- Page Title
+                                   ================================================== -->
+
+        <section id="page-title">
 
             <div class="row">
 
-               <div class="columns">
-                  <h3 class="address">Contact Us</h3>
-                  <p>
-                  1600 Amphitheatre Parkway<br>
-                  Mountain View, CA<br>
-                  94043 US
-                  </p>
+                <div class="twelve columns">
 
-                  <ul>
-                    <li><a href="tel:6473438234">647.343.8234</a></li>
-                    <li><a href="tel:1234567890">123.456.7890</a></li>
-                    <li><a href="mailto:someone@puremedia.com">someone@puremedia.com</a></li>
-                  </ul>                  
-               </div> <!-- /columns -->             
+                    <h1>Art Portfolio<span>.</span>
+                    </h1>
+                   <!-- <p>Projects pull of indefetigable ultra bodacity.</p>-->
 
-               <div class="columns last">
-                  <h3 class="contact">Follow Us</h3>
+                </div>
 
-                  <ul>
-                     <li><a href="#">Facebook</a></li>
-                     <li><a href="#">Twitter</a></li>
-                     <li><a href="#">GooglePlus</a></li>
-                     <li><a href="#">Instagram</a></li>
-                     <li><a href="#">Flickr</a></li>
-                     <li><a href="#">Skype</a></li>
-                  </ul>
-                  
-               </div> <!-- /columns --> 
+            </div>
+            <!-- /row -->
 
-            </div> <!-- /Row(nested) -->
-
-         </div>
-
-         <p class="copyright">&copy; Copyright 2014 Puremedia. Design by <a href="http://www.styleshout.com/">Styleshout.</a></p>        
-
-         <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
-         </div>
-
-      </div> <!-- /row -->
-
-   </footer> <!-- /footer -->
+        </section>
+        <!-- /page-title -->
 
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>   
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/backstretch.js"></script> 
-   <script src="js/waypoints.js"></script>  
-   <script src="js/main.js"></script>
+        <!-- Portfolio
+                                   ================================================== -->
+        <section
+            id="portfolio">
+            <!--<div class = "footer-about" style = "position: relative; bottom: 50px; right: 0px;">
+                                                		<a href="https://drive.google.com/file/d/10vp8CTIVmUMyUnYvo25x2d1QhGi__mYV/view?usp=sharing" target = " ______blank" class="btn btn--stroke u-fullwidth">View My Resume</a>
+                                                	</div> -->
 
-</body>
+            <div class="row section-head">
+                <ul class="member-social1">
+                    <a href="https://github.com/SaleemZYounus" target="_blank">
+                        <i class="fa fa-github"></i>
+                        <div class="hide1">GitHub</div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC-3UFgrJe0T0m49y43UKUqg" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </li-->
+                <a href="https://www.linkedin.com/in/saleem-younus/" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                    <div class="hide2">linkedin</div>
+                </a>
+                <a href="https://drive.google.com/file/d/1l42ePguoEBNexx_joQhX7jKWq5-9bWID/view?usp=sharing" target="_blank">
+                    <i class="fa fa-file"></i>
+                    <div class="hide">Resume</div>
+                </a>
+            </ul>
+            <div class="twelve columns">
 
-</html>
+                <h1>My Projects<span>.</span>
+                </h1>
+
+                <hr/>
+
+                <p>A collection of my music art and design projects
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="row items">
+
+            <div class="twelve columns">
+
+                <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
+
+                    <div class="bgrid item">
+                        <div class="item-wrap">
+
+                            <a href="https://www.instagram.com/p/CdcTUs7BRas/" target="_blank">
+                                <img src="images/portfolio/spidey2.jpeg" alt="spidey">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Spiderman</h5>
+                                        <p>Watercolor Pencils</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+
+                    <div class="bgrid item">
+                        <div class="item-wrap">
+
+                            <a href="https://www.instagram.com/p/CJCZAFNlpfW/" target="_blank">
+                                <img src="images/portfolio/suns.jpeg" alt="SKY">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Sunset Painting</h5>
+                                        <p>Watercolor</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+
+                    <div class="bgrid stack item">
+                        <div class="item-wrap">
+
+                            <a href="https://www.youtube.com/channel/UC-3UFgrJe0T0m49y43UKUqg" target="blank">
+
+
+                                <img src="images/portfolio/Untitled design.png" alt="YouTube Channel">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Supreme Pianist</h5>
+                                        <p>Youtube Channel</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+                    <div class="bgrid item">
+                        <div class="item-wrap">
+
+                            <a href="https://www.youtube.com/watch?v=EG4h0RcNU_A" target="_blank">
+                                <img src="images/portfolio/beluefe.png" alt="Piano">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Piano Self Composition</h5>
+                                        <p>SupremePianist</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+                    <div class="bgrid item">
+                        <div class="item-wrap">
+
+                            <a href="https://www.instagram.com/p/B03qPQRFFFV/" target="_blank">
+                                <img src="images/portfolio/irinman.jpeg" alt="Pencil Drawing Iron Man">
+                                <div class="overlay"></div>
+                                <div class="portfolio-item-meta">
+                                    <h5>Iron Man</h5>
+                                    <p>Pencil Drawing</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+                    <div class="bgrid item">
+                        <div class="item-wrap">
+                            <a href="https://www.instagram.com/p/CEZuNlFlHNc/" target="_blank">
+                                <img src="images/portfolio/chicago.jpeg" alt="Chicago Skyline Painting">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Chicago Skyline Painting</h5>
+                                        <p>Watercolor Painting</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+                    <div class="bgrid item">
+                        <div class="item-wrap">
+
+                            <a href="https://autode.sk/3BdMySe" target="__blank">
+                                <img src="images/portfolio/6789.png" alt="GrandPiano">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Grand Piano 3D Model</h5>
+                                        <p>Autodesk Inventor</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+                    <div class="bgrid item">
+                        <div class="item-wrap">
+
+                            <a href="#">
+                                <img src="images/portfolio/unravel.png" alt="piano">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Piano Performance</h5>
+                                        <p>SupremePianist</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- item end -->
+
+                </div>
+                <!-- /portfolio-wrapper -->
+
+            </div>
+            <!-- /twelve -->
+
+        </div>
+        <!-- /row -->
+    </body>
+</html></section><!-- /Portfolio --><div class="footer-about" style="position: sticky; top: 90%; bottom: 10%; right: 470px; z-index: 2;">
+<a href="https://drive.google.com/file/d/1l42ePguoEBNexx_joQhX7jKWq5-9bWID/view?usp=sharing" target="_blank" class="btn btn--stroke u-fullwidth">View My Resume</a></div><!-- Content
+                   ================================================== --><section id="content">
+
+<div class="row portfolio-content">
+
+    <div class="entry tab-whole nine columns centered">
+
+        <header class="entry-header">
+
+            <h1 class="entry-title"></h1>
+
+
+        </header>
+
+        <div class="entry-content">
+            <p class="lead"></p>
+
+        </div>
+    </div>
+    <div class="entry-content-media">
+        <div class="post-thumb">
+            <iframe src="SlidingGallery.html" width="100%" height="680" frameborder="0"></iframe>
+            
+        </div>
+    </div>
+
+    <div class="pagenav group">
+        <span class="prev">
+            <a href="#" rel="prev">Previous</a>
+        </span>
+        <span class="next">
+            <a href="#" rel="next">Next</a>
+        </span>
+    </div>
+
+
+    <!-- /entry -->
+
+</div>
+<!-- /portfolio-content -->
+
+
+<div class="row more-projects">
+
+    <h1>More Projects.</h1>
+
+    <div class="tab-whole nine columns centered">
+
+        <div id="portfolio-wrapper" class="bgrid-half tab-bgrid-halfgroup">
+
+            <div class="bgrid item">
+                <div class="item-wrap">
+
+                    <a href="r-weekday.html">
+                        <img src="rsquare.png" alt="Beetle">
+                        <div class="overlay">
+                            <div class="portfolio-item-meta">
+                                <h5>R</h5>
+                                <p>Statistical Programming</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- /item -->
+
+            <div class="bgrid item">
+                <div class="item-wrap">
+
+                    <a href="projects1.html">
+                        <img src="pypy.png" alt="Banjo Player">
+                        <div class="overlay">
+                            <div class="portfolio-item-meta">
+                                <h5>Python</h5>
+                                <p>Ordinary Differential Equations</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- item end -->
+
+            <div class="bgrid stack item">
+                <div class="item-wrap">
+
+                    <a href="projects2.html">
+                        <img src="collab.png" alt="Judah">
+                        <div class="overlay">
+                            <div class="portfolio-item-meta">
+                                <h5>Collab Research</h5>
+                                <p>Quantitative Finance</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- item end -->
+
+            <div class="bgrid item">
+                <div class="item-wrap">
+
+                    <a href="https://drive.google.com/file/d/1ynPtqoa6GUhumxWZUvDdXbCYi27yRYxY/view?usp=sharing">
+                        <img src="statalogo.png" alt="Grizzly">
+                        <div class="overlay"></div>
+                        <div class="portfolio-item-meta">
+                            <h5>Stata</h5>
+                            <p>Econometrics</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- item end -->
+
+        </div>
+        <!-- /portfolio-wrapper -->
+
+    </div>
+    <!-- /nine -->
+
+</div>
+<!-- /more-projects --></section><!-- /content --><!-- Footer
+                   ================================================== --><footer>
+<!-- team
+   	=================================================== -->
+       <div id='team'>
+
+        <div class="row team section-head">
+
+            <div class="twelve columns">
+
+                <h1>Contact me<span>.</span></h1>
+
+                <hr />
+
+                <p>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="row about-content">
+
+            <div class="twelve columns">
+
+                <div id="team-wrapper" class="mob-bgrid-whole group">
+
+                    <div class="member">
+
+                        <div class="member-header">
+
+                            <div class="member-pic">
+                                <img src="images/team/saleembw2.jpeg" alt=""/>
+                            </div>
+
+                            <div class="member-name">
+                                <h3>Saleem Younus</h3>
+                                <span>Student / Coder / Trader / Musician</span>
+                            </div>
+
+                        </div>
+
+                        <p>
+                            Contact me by email:
+                            saleemyounus33@gmail.com and view my activities on the following platforms </p>
+                        
+                        <ul class="member-social">
+                            <li><a href="https://github.com/SaleemZYounus" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <!--li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li-->
+                            <li><a href="https://www.linkedin.com/in/saleem-younus/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+                        </ul>
+
+                    </div> <!-- /member -->
+
+
+
+                </div> <!-- /twelve -->
+
+            </div> <!-- /team-wrapper -->
+
+        </div> <!-- /row -->
+
+    </div> <!-- /team -->
+ 
+</section> <!-- /about -->
+
+
+<!-- journal
+=================================================== -->
+
+
+
+<!-- Contact Section
+================================================== -->
+
+
+<!-- Footer
+================================================== -->
+<footer>
+
+    <div class="row">
+
+        <p class = "copyright" style = "position: sticky; z-index: 3;"> &copy; Copyright 2023 Saleem Younus. Design by <a
+                href="http://www.styleshout.com/">Styleshout.</a></p>
+
+        <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero"><span>Top</span><i
+                    class="fa fa-long-arrow-up"></i></a>
+        </div>
+
+    </div> <!-- /row -->
+
+</footer> <!-- /footer -->
+
+
+<!-- /row --></footer><!-- /footer --><!-- Java Script
+                   ================================================== --><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script>
+window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script><script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script><script src="js/jquery.flexslider.js"></script><script src="js/jquery.fittext.js"></script><script src="js/backstretch.js"></script><script src="js/waypoints.js"></script><script src="js/main.js"></script></body></html>

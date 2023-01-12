@@ -34,7 +34,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media-queries.css">
-
+	
 	<!-- Script
    =================================================== -->
 	<script src="js/modernizr.js"></script>
@@ -42,6 +42,118 @@
 	<!-- Favicons
 	=================================================== -->
 	<link rel="shortcut icon" href="favicon.png">
+	<link rel="chart" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>            #page-title p,
+	#page-title h1 {
+		margin: 25px;
+
+	}
+
+	a,
+	h1,
+	p {
+		color: rgb(198, 198, 223);
+		margin: 0;
+
+	}
+	.gist {
+		font-size: 28px
+	}
+	
+	.gist .blob-code {
+		padding: 5px 10px !important;
+		text-align: left;
+		background: rgba(107, 112, 126, 0);
+		border: 0;
+
+	}
+
+	.blob-code,
+	.blob-code-inner {
+		color: #ccc5e5 !important
+	}
+	.image-container {
+		transition: 0.4s;
+
+		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	.image-container img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 20%;
+		overflow: hidden;
+
+	}
+
+	.image-container img.top {
+		transform: scale(1);
+		z-index: 2;
+		filter: blur(0px);
+		transition: transform 0.5s;
+		background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.503), rgba(172, 105, 235, 0.457), rgba(0, 229, 255, 0.518), rgba(255, 0, 132, 0.509), rgba(166, 0, 255, 0.352), rgba(4, 255, 255, 0.352));
+		animation: anim4 40s infinite;
+		background-size: 600% 100%;
+	}
+
+	.image-container:hover img.top {
+		transition: 0.4s;
+		transform: scale(2);
+		opacity: 0;
+		filter: blur(2px);
+
+	}
+
+	.image-container img.bottom {
+		position: relative;
+		z-index: 1;
+		filter: blur(1.2px);
+		transform: scale(1.3);
+		background: #ffffff;
+
+	}
+	.image-container:hover img.bottom {
+		transform: scale(1);
+		filter: blur(0px);
+
+	}
+	.image-container:hover {
+		transition: 0.2s;
+		border-radius: 20%;
+		overflow: hidden;
+	}
+	.item .item-wrap .portfolio-item-meta p {
+		font: 14px / 18px "raleway-semibold", sans-serif;
+		color: #000000;
+		margin: 0;
+	}
+	.item .item-wrap .portfolio-item-meta h5 {
+		color: rgb(46, 77, 139);
+	}
+	.image-container:hover .overlay {
+		z-index: 3;
+		border-radius: 20%;
+		overflow: hidden;
+		background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501));
+		color: #000000;
+	}
+	.service-list .icon-part {
+    
+    animation: myanimation 20s infinite;
+    color: rgb(255, 255, 255);
+    width: 84px;
+    padding: 17px 5px;
+    font-size: 50px;
+    border-radius: 19px;
+    margin: 0 auto;
+}
+
+	</style>
 
 </head>
 
@@ -83,7 +195,7 @@
 					<li><a class="smoothscroll" href="#portfolio">Projects.</a></li>
 					<li><a class="smoothscroll" href="#services">Skills.</a></li>
 					<li><a class="smoothscroll" href="#about">About.</a></li>
-					<!-- <li><a class="smoothscroll" href="#journal">Blog.</a></li> -->
+					<li><a href="portfolio.html#page-title">Art.</a></li> 
 					<li><a class="smoothscroll" href="#team">Contact.</a></li>
 					
 				</ul>
@@ -119,7 +231,7 @@
 						<!-- Slide -->
 						<li>
 							<div class="flex-caption">
-								<h1>I create <a class="smoothscroll" href="#portfolio" title=""> music & art</a></h1>
+								<h1>I am a creative <a class="smoothscroll" href="#portfolio" title=""> Problem Solver</a></h1>
 								<p><a class="button stroke smoothscroll" href="#portfolio">View my Projects</a></p>
 							</div>
 						</li>
@@ -157,6 +269,8 @@
 			
 		<div class="row section-head">
 			<ul class="member-social1">
+				
+
 				<a href="https://github.com/SaleemZYounus" target="_blank"><i class="fa fa-github"></i><div class="hide1">GitHub</div></a>
 				<!--li><a href="https://twitter.com/PianistSupreme" target="_blank"><i class="fa fa-twitter"></i></a></li-->
 				<a href="https://www.linkedin.com/in/saleem-younus/" target="_blank"><i class="fa fa-linkedin"></i><div class="hide2">linkedin</div></a>
@@ -169,7 +283,7 @@
 
 				<hr />
 
-				<p>A collection of my music art and design projects
+				<p>A collection of my Data Analytics, Programming, and Econometrics projects
 				</p>
 
 			</div>
@@ -178,150 +292,105 @@
 
 		<div class="row items">
 
-			<div class="twelve columns">
+            <div class="twelve columns">
 
-				<div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
+                <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
 
-					<div class="bgrid item">
-						<div class="item-wrap">
+                    <div class="bgrid item">
+                        <div class="item-wrap">
 
-							<a href="https://www.instagram.com/p/CdcTUs7BRas/" target ="_blank">
-								<img src="images/portfolio/spidey2.jpeg" alt="spidey">
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Spiderman</h5>
-										<p>Watercolor Pencils</p>
-									</div>
-								</div>
-							</a>
-
-						</div>
-					</div> <!-- /item -->
+                            <a href="r-weekday.html">
 
 
-					<div class="bgrid item">
-						<div class="item-wrap">
+                                <div class="image-container">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>R Studio: Analysis</h5>
+                                            <p>Market Returns on Weekdays</p>
+                                            
+                                        </div>
+                                    </div>
+                                    <img src="avgreturns.jpeg" class="bottom">
+                                    <img src="rsquare.png" class="top">
+                                </div>
+                                <!---->
+                            </a>
 
-							<a href="https://www.instagram.com/p/CJCZAFNlpfW/" target ="_blank">
-								<img src="images/portfolio/suns.jpeg" alt="SKY">
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Sunset Painting</h5>
-										<p>Watercolor</p>
-									</div>
-								</div>
-							</a>
-
-						</div>
-					</div> <!-- /item -->
-
-					
-					<div class="bgrid stack item">
-						<div class="item-wrap">
-
-							<a href="https://www.youtube.com/channel/UC-3UFgrJe0T0m49y43UKUqg" target="blank">
-								
-						
-								<img src="images/portfolio/Untitled design.png" alt="YouTube Channel">
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Supreme Pianist</h5>
-										<p>Youtube Channel</p>
-									</div>
-								</div>
-							</a>
+                        </div>
+                    </div>
+                    <!-- /item -->
 
 
-						</div>
-					</div> <!-- /item -->
+                    <div class="bgrid item">
+                        <div class="item-wrap">
 
-					<div class="bgrid item">
-						<div class="item-wrap">
+                            <a href="projects1.html">
+                                <div class="image-container">
 
-							<a href="https://www.youtube.com/watch?v=EG4h0RcNU_A" target="_blank">
-								<img src="images/portfolio/beluefe.png" alt="Piano">
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Piano Self Composition</h5>
-										<p>SupremePianist</p>
-									</div>
-								</div>
-							</a>
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>Python Projects</h5>
+                                            <p>Ordinary Differential Equations</p>
+                                        </div>
+                                    </div>
+                                    <img src="Pendalum.jpg" class="bottom">
+                                    <img src="pypy.png" class="top">
+                                </div>
 
-						</div>
-					</div> <!-- /item -->
+                            </a>
 
-					<div class="bgrid item">
-						<div class="item-wrap">
-
-							<a href="https://www.instagram.com/p/B03qPQRFFFV/" target ="_blank">
-								<img src="images/portfolio/irinman.jpeg" alt="Pencil Drawing Iron Man">
-								<div class="overlay"></div>
-								<div class="portfolio-item-meta">
-									<h5>Iron Man</h5>
-									<p>Pencil Drawing</p>
-								</div>
-							</a>
-
-						</div>
-					</div> <!-- /item -->
-
-					<div class="bgrid item">
-						<div class="item-wrap">
-							<a href="https://www.instagram.com/p/CEZuNlFlHNc/" target ="_blank">
-								<img src="images/portfolio/chicago.jpeg" alt="Chicago Skyline Painting">
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Chicago Skyline Painting</h5>
-										<p>Watercolor Painting</p>
-									</div>
-								</div>
-							</a>
-							
+                        </div>
+                    </div>
+                    <!-- /item -->
 
 
-						</div>
-					</div> <!-- /item -->
+                    <div class="bgrid stack item">
+                        <div class="item-wrap">
 
-					<div class="bgrid item">
-						<div class="item-wrap">
-
-							<a href="https://autode.sk/3BdMySe" target="__blank">
-								<img src="images/portfolio/6789.png" alt="GrandPiano">
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Grand Piano 3D Model</h5>
-										<p>Autodesk Invetor</p>
-									</div>
-								</div>
-							</a>
+                            <a href="projects2.html" target="blank">
 
 
-						</div>
-					</div> <!-- /item -->
+                                <div class="image-container">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>Collab Research</h5>
+                                            <p>Arch/Garch Models & Forcasting</p>
+                                        </div>
+                                    </div>
+                                    <img src="forcast.jpeg" class="bottom">
+                                    <img src="1671418973299.png" class="top">
+                                </div>
 
-					<div class="bgrid item">
-						<div class="item-wrap">
+                            </a>
 
-							<a href="#">
-								<img src="images/portfolio/unravel.png" alt="piano">
-								<div class="overlay">
-									<div class="portfolio-item-meta">
-										<h5>Piano Performance</h5>
-										<p>SupremePianist</p>
-									</div>
-								</div>
-							</a>
 
-						</div>
-					</div> <!-- item end -->
+                        </div>
+                    </div>
+                    <!-- /item -->
 
-				</div> <!-- /portfolio-wrapper -->
+                    <div class="bgrid item">
+                        <div class="item-wrap">
 
-			</div> <!-- /twelve -->
+                            <a href="https://drive.google.com/file/d/1ynPtqoa6GUhumxWZUvDdXbCYi27yRYxY/view?usp=sharing" target="_blank">
+                                <div class="image-container">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>Stata: Econometrics</h5>
+                                            <p> Economic Factors on Market Performance</p>
+                                        </div>
+                                    </div>
+                                    <img src="resizedgeo.jpeg" class="bottom">
+                                    <img src="1671419031460.png" class="top">
+                                </div>
 
-		</div> <!-- /row -->
+                            </a>
 
+                        </div>
+
+		<!--
+			THIS IS DIFFERENT
+		-->
+		
 	</section> <!-- /Portfolio -->
 
 	<div class = "footer-about" style = "position: sticky; top: 90%; bottom: 10%; right: 470px; z-index: 2;">
@@ -363,7 +432,7 @@
 
 						<div class="service-content">
 							<p>
-								I am well versed in Data Analytics, Econometrics and Data Structuring tools including Python, Stata and Excel.							</p>
+								I am well versed in Data Analytics, Econometrics and Data Structuring tools including Python, R, Stata and Excel.							</p>
 						</div>
 
 					</div> <!-- /bgrid -->	
@@ -404,11 +473,28 @@
 							<span class="icon-graph"></span>
 						</div>
 
-						<h3>3D & Graphic Design</h3>
+						<h3>Statistical Programming</h3>
+
+						<div class="service-content">
+							<p>I have experience in Statistical Programming using R and Stata for statistical operations, stats, sampling, bootstrapping, ANOVA testing, Regression, Visualization and more.
+							</p>
+						</div>
+
+					</div> <!-- /bgrid -->
+
+					<div class="bgrid">
+
+						<div class="icon-part"  style="width: 80px; height: 80px;">
+							<i>
+								<img src="algotrade.gif" alt="chart move" style="padding: 0px 10px 10px 10px;">
+							</i>
+						</div>
+
+						<h3>Quantitative Trading</h3>
 
 						<div class="service-content">
 							<p>
-								I have much experience in graphic editing and design for use in social media posters and advertisements as well as 3D modeling experience using AutoCAD and Autodesk Inventor.
+								Quantitative Trading, Using Algorithms implementing technical and fundamental Strategies in Python and C using QuantConnect.
 							</p>
 						</div>
 
@@ -420,28 +506,12 @@
 							<i class="icon-film"></i>
 						</div>
 
-						<h3>Videography & Photography.</h3>
+						<h3>3D & Graphic Design & Editing.</h3>
 
 						<div class="service-content">
 							<p>
-								My videography experience includes recording producing and editing a variety of music, art, and advertisements projects. Photography, I use to capture and record my variouse forms of art
-
-							</p>
-						</div>
-
-					</div> <!-- /bgrid -->
-
-					<div class="bgrid">
-
-						<div class="icon-part">
-							<i class="icon-camera"></i>
-						</div>
-
-						<h3>Editing.</h3>
-
-						<div class="service-content">
-							<p>
-								Within Photography and Videography, Editing is a large component of the optimization of visual projects over various forms of art
+								I have much experience in graphic editing and design for use in social media and advertisements as well as 3D modeling experience using AutoCAD and Autodesk Inventor.
+								Editing with concentration in optimization of visual projects over various forms of media.
 							</p>
 						</div>
 
@@ -604,7 +674,7 @@
 
 		<div class="row">
 
-			<p class = "copyright" style = "position: sticky; z-index: 3;"> &copy; Copyright 2021 Saleem Younus. Design by <a
+			<p class = "copyright" style = "position: sticky; z-index: 3;"> &copy; Copyright 2023 Saleem Younus. Design by <a
 					href="http://www.styleshout.com/">Styleshout.</a></p>
 
 			<div id="go-top">

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+    <html
+    class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+
+        <!--- Basic Page Needs
+                           ================================================== -->
+        <meta charset="utf-8">
+        <title>Portfolio - Programming Projects</title>
+        <meta name="description" content="">
+        <meta
+        name="author" content="">
+
+        <!-- Mobile Specific Metas
+                           ================================================== -->
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- CSS
+                            ================================================== -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link
+        rel="stylesheet" href="css/media-queries.css">
+
+        <!-- Script
+                           =================================================== -->
+        <script src="js/modernizr.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!-- Favicons
+                        	=================================================== -->
+        <link rel="shortcut icon" href="favicon.png">
+        <style>
+
+            body {
+                animation: anim4 12s infinite;
+    background: linear-gradient(233deg, #06b382, #15d9f3, rgb(122, 139, 255) ), linear-gradient(55deg, rgb(125, 17, 226), #009353, rgb(0, 238, 255)), linear-gradient(233deg, rgb(0, 0, 0), rgb(82, 218, 255), rgb(0, 0, 0) 78.71%);
+    background-size: 300% 40.2%;
+}
+            footer{
+                animation: anim4 12s infinite;
+                background-size: 300% 100%;
+            }
+            header {
+                box-shadow: 0 0 100px 1px #114b5b;
+            }
+
+            #page-title p,
+            #page-title h1 {
+                margin: 25px;
+
+            }
+
+            a,
+            h1, h2,
+            p {
+                color: rgb(255, 255, 255);
+                margin: 0;
+
+            }
+            .gist {
+                font-size: 28px
+            }
+            .gist-meta,
+            .gist-file,
+            .clone-url-button > .clone-url-link {
+                background: linear-gradient(90deg, #fffefe, #000000) !important;
+                border-color: #000000 !important;
+                border-radius: 30px 30px 30px 30px !important;
+                text-shadow: none !important;
+                color: #bd1d1d00 !important;
+                margin-right: 40px;
+                margin-left: 40px;
+                padding-bottom: 0px;
+                box-shadow: 0 0 100px 9px #0e878d;
+            }
+            ul#nav li.current a,
+            footer #go-top a {
+                background: #1a7c7e;
+                box-shadow: 0 0 10px 5px #0d676f;
+            }
+            footer #go-top a:hover {
+                background: #ffd2d2;
+            }
+            .highlight {
+                background: linear-gradient(#000000, #215d5d) !important;
+                color: #C5C8C6 !important;
+
+            }
+            .gist .blob-code {
+                padding: 5px 10px !important;
+                text-align: left;
+                background: rgba(107, 112, 126, 0);
+                border: 0;
+
+            }
+
+            .blob-code,
+            .blob-code-inner {
+                color: #ccc5e5 !important
+            }
+            .image-container {
+                transition: 0.4s;
+
+                position: relative;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .image-container img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 300px;
+                width: 400px;
+                border-radius: 20%;
+                overflow: hidden;
+
+            }
+
+            .image-container img.top {
+                transform: scale(1);
+                z-index: 2;
+                filter: blur(0px);
+                transition: transform 0.5s;
+                background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.503), rgba(172, 105, 235, 0.457), rgba(0, 229, 255, 0.518), rgba(255, 0, 132, 0.509), rgba(166, 0, 255, 0.352), rgba(4, 255, 255, 0.352));
+                animation: anim4 40s infinite;
+                background-size: 600% 200%;
+            }
+
+            .image-container:hover img.top {
+                transition: 0.4s;
+                transform: scale(2);
+                opacity: 0;
+                filter: blur(2px);
+
+            }
+
+            .image-container img.bottom {
+                position: relative;
+                z-index: 1;
+                filter: blur(1.2px);
+                transform: scale(1.3);
+                background: #ffffff;
+
+            }
+            .image-container:hover img.bottom {
+                transform: scale(1);
+                filter: blur(0px);
+
+            }
+            .image-container:hover {
+                transition: 0.2s;
+                border-radius: 20%;
+                overflow: hidden;
+            }
+            .item .item-wrap .portfolio-item-meta p {
+                font: 14px / 18px "raleway-semibold", sans-serif;
+                color: #000000;
+                margin: 0;
+            }
+            .item .item-wrap .portfolio-item-meta h5 {
+                color: rgb(46, 77, 139);
+            }
+            .image-container:hover .overlay {
+                z-index: 3;
+                border-radius: 20%;
+                overflow: hidden;
+                background: rgba(255, 255, 255, 0);
+                color: #000000;
+            }
+            .section-head h1 {
+    font: 16px/24px "raleway-heavy", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+    margin-bottom: 56px;margin-top: 56px;
+}
+#team-wrapper .member-name span {
+    position: relative;
+    top: -6px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #007991;
+    display: block;
+}
+#page-title {
+    padding-bottom: 100px;
+}
+
+        </style>
+    </head>
+
+    <body style="opacity: 5;">
+
+        <div id="top"></div>
+        <div id="preloader">
+            <div id="status">
+                <img src="images/loader.gif" height="60" width="60" alt="">
+                <div class="loader">Loading...</div>
+            </div>
+        </div>
+
+        <!-- Header
+                           =================================================== -->
+        <header id="main-header">
+
+            <div class="row header-inner">
+
+                <div class="logo">
+                    <a href="index.html">Puremedia.</a>
+                </div>
+
+                <nav id="nav-wrap">
+
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+                        <span class='menu-text'>Show Menu</span>
+                        <span class="menu-icon"></span>
+                    </a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">
+                        <span class='menu-text'>Hide Menu</span>
+                        <span class="menu-icon"></span>
+                    </a>
+
+                    <ul id="nav" class="nav">
+                        <li>
+                            <a href="index.html#hero">Home.</a>
+                        </li>
+                        <li class="current">
+                            <a href="index.html#portfolio">Projects.</a>
+                        </li>
+                        <li>
+                            <a href="index.html#services">Skills.</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about">About.</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Art.</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">Contact.</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- /nav-wrap -->
+
+            </div>
+            <!-- /header-inner -->
+
+        </header>
+
+
+        <!-- Page Title
+                           ================================================== -->
+
+        <section id="page-title">
+
+            <div class="row">
+
+                <div class="twelve columns">
+
+                    <h1>Collab Python Project<span>.</span>
+                    </h1>
+                    <h2>Forecasting Stock Performance [Arima/Arch/Garch Models]</h2>
+
+                </div>
+
+            </div>
+            <!-- /row -->
+            <br>
+            <!-- GITHUB GIST CODEE https://gist.github.com/SaleemZYounus/c44542556387778f4e4459955c657d8a
+                  -->
+                  <div style="display: flex;">
+                    <div style="flex: 1;">
+                    
+                    <script src="https://gist.github.com/SaleemZYounus/e922c0b0126379b66b6bcd1674608228.js"></script>
+                </div>
+                <div style="flex: 1;">
+                  <script src="https://gist.github.com/SaleemZYounus/476999149c4aaafa26bd12f65ef1dee8.js"></script>
+                </div>
+                </div>
+            <br>
+                <h1>Project Output<span>.</span>
+                </h1>
+                
+                <!--<h2>Equation Used: $$\begin{cases}
+                    \frac{d\theta}{dt} &= \omega \\
+                    \frac{d\omega}{dt} &=\frac{b}{m}\omega + \frac{g}{L}\sin(\theta)
+                    \end{cases}$$</h2> -->
+                <div class="output">
+                    
+
+                        
+                    <img src="forcast.png" alt="Pencil Drawing Iron Man" style="width: 1000px; box-shadow:  0px 0px 40px 40px#24718259; background: linear-gradient(#2c808866,#ffffff,#2c6b8866), linear-gradient(90deg, #2c768866,#ffffff,#2c858866);">
+            
+                            
+                    </div>
+        </section>
+        <!-- /page-title -->
+
+<!-- team
+   	=================================================== -->
+       <div id='team'>
+
+        <div class="row team section-head">
+
+            <div class="twelve columns">
+
+                <h1>Contact me<span>.</span></h1>
+
+                <hr />
+
+                <p>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="row about-content">
+
+            <div class="twelve columns">
+
+                <div id="team-wrapper" class="mob-bgrid-whole group">
+
+                    <div class="member">
+
+                        <div class="member-header">
+
+                            <div class="member-pic">
+                                <img src="images/team/saleembw2.jpeg" alt="" />
+                            </div>
+
+                            <div class="member-name">
+                                <h3>Saleem Younus</h3>
+                                <span>Student / Coder / Trader / Musician</span>
+                            </div>
+
+                        </div>
+
+                        <p>
+                            Contact me by email:
+                            saleemyounus33@gmail.com and view my activities on the following platforms </p>
+                        
+                        <ul class="member-social">
+                            <li><a href="https://github.com/SaleemZYounus" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <!--li><a href="https://twitter.com/PianistSupreme" target="_blank"><i class="fa fa-twitter"></i></a></li-->
+                            <li><a href="https://www.linkedin.com/in/saleem-younus/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+                        </ul>
+
+                    </div> <!-- /member -->
+
+
+
+                </div> <!-- /twelve -->
+
+            </div> <!-- /team-wrapper -->
+
+        </div> <!-- /row -->
+
+    </div> <!-- /team -->
+ 
+</section> <!-- /about -->
+
+
+<!-- journal
+=================================================== -->
+
+
+
+<!-- Contact Section
+================================================== -->
+
+
+<!-- Footer
+================================================== -->
+<footer>
+
+    <div class="row">
+
+        <p class = "copyright" style = "position: sticky; z-index: 3;"> &copy; Copyright 2023 Saleem Younus. Design by <a
+                href="http://www.styleshout.com/">Styleshout.</a></p>
+
+        <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero"><span>Top</span><i
+                    class="fa fa-long-arrow-up"></i></a>
+        </div>
+
+    </div> <!-- /row -->
+
+</footer> <!-- /footer -->
+
+
+<!-- Java Script
+================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/backstretch.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
