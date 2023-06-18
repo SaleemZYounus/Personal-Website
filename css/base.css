@@ -21,7 +21,7 @@
 /* =================================================================== */
 html {
 	font-family: sans-serif;
-	-ms-text-size-adjust: 100%;
+	-ms-text-size-adjust: .%;
 	-webkit-text-size-adjust: 100%;
 }
 body {
@@ -241,11 +241,9 @@ ul ul, ul ol, ol ol, ol ul {
 /* links
 ---------------------------------------------------------------------- */
 a {
-	text-decoration: none;
-	line-height: inherit;
+	
 }
 a img {
-	border: none;
 }
 a:focus {
 	outline: none;
@@ -339,13 +337,16 @@ img {
 	width: 66.66667%;
 }
 .nine, .row .nine {
-	width: 75%;
+	width: 95%;
+	height: 100%;
+	
 }
 .ten .row .ten {
 	width: 83.33333%;
 }
 .eleven, .row .eleven {
-	width: 91.66667%;
+	width: 200%;
+	margin-right: 10%;
 }
 .twelve, .row .twelve {
 	width: 100%;

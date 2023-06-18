@@ -134,7 +134,7 @@ h6 {
 p {
 	margin: 15px 0 15px 0;
 }
-p img {
+p img .img2 {
 	margin: 0;
 }
 p.lead {
@@ -1614,19 +1614,21 @@ hr {
 }
 
 /* portfolio items */
-.item .item-wrap {
+.item .item-wrap .image-container2 {
 	overflow: hidden;
 	position: relative;
+	width: 100%;
 }
 .item .item-wrap a {
 	display: block;
 	cursor: pointer;
+	
 }
 
 
 
 .item .item-wrap .overlay {
-	background: #00000078;
+	background: #16121278;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1641,15 +1643,18 @@ hr {
 	-webkit-transition: opacity 0.3s ease-in-out;
 	-ms-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;	
+	
 }
-.item .item-wrap img {
+.item .item-wrap img{ 
 	vertical-align: bottom;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+
 }
+
 .item .item-wrap .portfolio-item-meta {
 	position: absolute;
 	top: 10%;

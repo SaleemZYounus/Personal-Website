@@ -3,701 +3,1034 @@
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+    <html
+    class="no-js" lang="en"> <!--<![endif]-->
 
-<head>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2LT50DWG0B"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+    <head>
 
-  		gtag('config', 'G-2LT50DWG0B');
-	</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LT50DWG0B"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-	<!--- Basic Page Needs
-   ================================================== -->
-	<meta charset="utf-8">
-	<title>Saleem Younus</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+            gtag('config', 'G-2LT50DWG0B');
+        </script>
 
-	<!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--- Basic Page Needs
+                   ================================================== -->
+        <meta charset="utf-8">
+        <title>Saleem Younus</title>
+        <meta name="description" content="">
+        <meta
+        name="author" content="">
 
-	<!-- CSS
-    ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media-queries.css">
-	
-	<!-- Script
-   =================================================== -->
-	<script src="js/modernizr.js"></script>
+        <!-- Mobile Specific Metas
+                   ================================================== -->
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Favicons
-	=================================================== -->
-	<link rel="shortcut icon" href="favicon.png">
-	<link rel="chart" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CSS
+                    ================================================== -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link
+        rel="stylesheet" href="css/media-queries.css">
 
-<style>            #page-title p,
-	#page-title h1 {
-		margin: 25px;
+        <!-- Script
+                   =================================================== -->
+        <script src="js/modernizr.js"></script>
 
-	}
+        <!-- Favicons
+                	=================================================== -->
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="chart" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	a,
-	h1,
-	p {
-		color: rgb(198, 198, 223);
-		margin: 0;
+        <style>
+            #page-title p,
+            #page-title h1 {
+                margin: 25px;
 
-	}
-	.gist {
-		font-size: 28px
-	}
-	
-	.gist .blob-code {
-		padding: 5px 10px !important;
-		text-align: left;
-		background: rgba(107, 112, 126, 0);
-		border: 0;
+            }
 
-	}
+            a,
+            h1,
+            p {
+                color: rgb(198, 198, 223);
+                margin: 0;
 
-	.blob-code,
-	.blob-code-inner {
-		color: #ede9ff !important
-	}
-	.image-container {
-		transition: 0.4s;
+            }
+            .gist {
+                font-size: 28px
+            }
 
-		position: relative;
-		border-radius: 50%;
-		overflow: hidden;
-	}
-	.image-container img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		border-radius: 20%;
-		overflow: hidden;
+            .gist .blob-code {
+                padding: 5px 10px !important;
+                text-align: left;
+                background: rgba(107, 112, 126, 0);
+                border: 0;
 
-	}
+            }
 
-	.image-container img.top {
-		transform: scale(1);
-		z-index: 2;
-		filter: blur(0px);
-		transition: transform 0.5s;
-		background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.503), rgba(172, 105, 235, 0.457), rgba(0, 229, 255, 0.518), rgba(255, 0, 132, 0.509), rgba(166, 0, 255, 0.352), rgba(4, 255, 255, 0.352));
-		animation: anim4 40s infinite;
-		background-size: 600% 100%;
-	}
+            .blob-code,
+            .blob-code-inner {
+                color: #ede9ff !important
+            }
+            .image-container {
+                transition: 0.4s;
 
-	.image-container:hover img.top {
-		transition: 0.4s;
-		transform: scale(2);
-		opacity: 0;
-		filter: blur(2px);
+                position: relative;
+                border-radius: 50%;
+                overflow: hidden;
+            }
 
-	}
+            .image-container img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 20%;
+                overflow: hidden;
 
-	.image-container img.bottom {
-		position: relative;
-		z-index: 1;
-		filter: blur(1.2px);
-		transform: scale(1.3);
-		background: #ffffff;
+            }
+            .image-container img.top {
+                transform: scale(1);
+                z-index: 2;
+                filter: blur(0px);
+                transition: transform 0.5s;
+                background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.503), rgba(172, 105, 235, 0.457), rgba(0, 229, 255, 0.518), rgba(255, 0, 132, 0.509), rgba(166, 0, 255, 0.352), rgba(4, 255, 255, 0.352));
+                animation: anim4 40s infinite;
+                background-size: 600% 100%;
+            }
 
-	}
-	.image-container:hover img.bottom {
-		transform: scale(1);
-		filter: blur(0px);
+            .image-container:hover img.top {
+                transition: 0.4s;
+                transform: scale(2);
+                opacity: 0;
+                filter: blur(2px);
+            }
+            .image-container img.bottom {
+                position: relative;
+                z-index: 1;
+                filter: blur(1.2px);
+                transform: scale(1.8);
+                background: #ffffff;
 
-	}
-	.image-container:hover {
-		transition: 0.2s;
-		border-radius: 20%;
-		overflow: hidden;
-	}
-	.item .item-wrap .portfolio-item-meta p {
-		font: 14px / 18px "raleway-semibold", sans-serif;
-		color: #000000;
-		margin: 0;
-	}
-	.item .item-wrap .portfolio-item-meta h5 {
-		color: rgb(46, 77, 139);
-	}
-	.image-container:hover .overlay {
-		z-index: 3;
-		border-radius: 20%;
-		overflow: hidden;
-		background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501));
-		color: #000000;
-	}
-	.service-list .icon-part {
+            }
+            .image-container:hover img.bottom {
+                transform: scale(1);
+                filter: blur(0px);
+
+            }
+            .image-container:hover {
+                transition: 0.2s;
+                border-radius: 20%;
+                overflow: hidden;
+            }
+            .item .item-wrap .portfolio-item-meta p {
+                font: 14px / 18px "raleway-semibold", sans-serif;
+                color: #000000;
+                margin: 0;
+            }
+            .item .item-wrap .portfolio-item-meta h5 {
+                color: rgb(46, 77, 139);
+            }
+            .image-container:hover .overlay {
+                z-index: 3;
+                border-radius: 20%;
+                overflow: hidden;
+                background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501));
+                color: #000000;
+            }
+            .image-container2 {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .image-container2 img {
+                max-width: 50%;
+                height: 100px;
+            }
+            .image-container2 img.top {
+                transform: scale(4);
+                z-index: 2;
+                filter: blur(0px);
+                transition: transform 0.5s;
+                background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.503), rgba(172, 105, 235, 0.457), rgba(0, 229, 255, 0.518), rgba(255, 0, 132, 0.509), rgba(166, 0, 255, 0.352), rgba(4, 255, 255, 0.352));
+                animation: anim4 40s infinite;
+                background-size: 600% 100%;
+            }
+
+            .image-container2:hover img.top {
+                transition: 0.4s;
+                transform: scale(1);
+                opacity: 0;
+                filter: blur(2px);
+            }
+            .image-container2 img.bottom {
+                position: relative;
+                z-index: 1;
+                filter: blur(1.2px);
+                transform: scale(1);
+                background: #ffffff;
+
+            }
+            .image-container2:hover img.bottom {
+                transform: scale(1);
+                filter: blur(0px);
+
+            }
+            .image-container2:hover {
+                transition: 0.2s;
+                border-radius: 20%;
+                overflow: hidden;
+            }
+            .item .item-wrap .portfolio-item-meta p {
+                font: 14px / 18px "raleway-semibold", sans-serif;
+                color: #000000;
+                margin: 0;
+            }
+            .item .item-wrap .portfolio-item-meta h5 {
+                color: rgb(46, 139, 117);
+            }
+            .image-container2:hover .overlay {
+                z-index: 3;
+                border-radius: 20%;
+                overflow: hidden;
+                background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501));
+                color: #000000;
+            }
+
+            .service-list .icon-part {
+
+                animation: myanimation 20s infinite;
+                color: rgb(255, 255, 255);
+                width: 84px;
+                padding: 17px 5px;
+                font-size: 50px;
+                border-radius: 19px;
+                margin: 0 auto;
+            }
+            .image-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 80%; /* set a fixed height for all images */
+
+        }
+
+        .image-container1 img {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover; /* make all images have the same aspect ratio */
+        }
+
+        .image-container1 img.top1 {
+            transform: scale(1);
+            z-index: 2;
+            filter: blur(0px);
+            transition: transform 0.5s;
+            position: absolute;
+            top: 0px;
+            background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.503), rgba(172, 105, 235, 0.457), rgba(0, 229, 255, 0.518), rgba(255, 0, 132, 0.509), rgba(166, 0, 255, 0.352), rgba(4, 255, 255, 0.352));
+            border-radius: 35%;
+        }
+
+        .image-container1 img.tops1 {
+            opacity: 1;
+            z-index: 2;
+            filter: blur(0px);
+            transition: transform 0.5s;
+            position: absolute;
+            top: 0px;
+            background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.503), rgba(172, 105, 235, 0.457), rgba(0, 229, 255, 0.518), rgba(255, 0, 132, 0.509), rgba(166, 0, 255, 0.352), rgba(4, 255, 255, 0.352));
+            border-radius: 35%;
+        }
+
+        .image-container1:hover img.top1,
+        .image-container1:hover img.tops1 {
+            transition: 0.4s;
+            opacity: 0;
+            filter: blur(2px);
+            height: fit-content;
+            transform: scale(1.3);
+            
+        }
+
+        .image-container1 img.bottom1 {
+            z-index: 0;
+            filter: blur(2px);
+            transform: scale(1);
+            background: #ffffff;
+            border-radius: 35%;        }
+
+        .image-container1 img.bottoms1 {
+            z-index: 0;
+            filter: blur(2px);
+            background: #ffffff;
+            border-radius: 35%;        }
+
+        .image-container1:hover img.bottom1,
+        .image-container1:hover img.bottoms1 {
+            transition: 0.4s;
+            filter: blur(0px);
+            transform: scale(1.3);
+
+        }
+
+        .image-container1:hover + .image-container1 {
+            transition: 0.4s;
+            transform: scale(0.7);
+        }   
+
+        .image-container1 .overlay1 {
+            position: absolute;
+            background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.503), rgba(172, 105, 235, 0.457), rgba(0, 229, 255, 0.518), rgba(255, 0, 132, 0.509), rgba(166, 0, 255, 0.352), rgba(4, 255, 255, 0.352));
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .image-container1:hover .overlay1 {
+            opacity: 1;
+            z-index: 1;
+            transform: scale(1.3);
+            background: linear-gradient(180deg, #ffffffc8, #86f7ff5e, rgba(0, 0, 0, 0.501)), linear-gradient(90deg, rgba(104, 33, 170, 0.268), rgba(172, 105, 235, 0.219), rgba(0, 229, 255, 0.223), rgba(255, 0, 132, 0.279), rgba(166, 0, 255, 0.256), rgba(4, 255, 255, 0.352));
+            border-radius: 35%;
     
-    animation: myanimation 20s infinite;
-    color: rgb(255, 255, 255);
-    width: 84px;
-    padding: 17px 5px;
-    font-size: 50px;
-    border-radius: 19px;
-    margin: 0 auto;
-}
 
-	</style>
+        }
 
-</head>
+        .portfolio-item-meta1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            z-index: 3;
+        }
 
-<body class="homepage">
-
-	<div id="preloader">
-		<div id="status">
-			<img src="images/loader.gif" height="60" width="60" alt="">
-			<div class="loader">Loading...</div>
-		</div>
-	</div>
-
-
-	<!-- Header
-   =================================================== -->
-	<header id="main-header">
-
-		<div class="row header-inner">
-
-			<div class="logo">
-				<a class="smoothscroll" href="#hero">Saleem Younus
-
-				</a>
-			</div>
-
-			<nav id="nav-wrap">
-
-				<a class="mobile-btn" href="#nav-wrap" title="Show navigation">
-					<span class='menu-text'>Show Menu</span>
-					<span class="menu-icon"></span>
-				</a>
-				<a class="mobile-btn" href="#" title="Hide navigation">
-					<span class='menu-text'>Hide Menu</span>
-					<span class="menu-icon"></span>
-				</a>
-
-				<ul id="nav" class="nav">
-					<li class="current"><a class="smoothscroll" href="#hero">Home.</a></li>
-					<li><a class="smoothscroll" href="#portfolio">Projects.</a></li>
-					<li><a class="smoothscroll" href="#services">Skills.</a></li>
-					<li><a class="smoothscroll" href="#about">About.</a></li>
-					<li><a href="portfolio.html#page-title">Art.</a></li> 
-					<li><a class="smoothscroll" href="#team">Contact.</a></li>
-					
-				</ul>
-
-			</nav> <!-- /nav-wrap -->
-
-		</div> <!-- /header-inner -->
-
-	</header>
+        .portfolio-item-meta1 h5 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            color: #ffffff
+            
+        }
+    
+        .portfolio-item-meta1 p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            font-family: sans-serif;
+            color: #ffffff;
+        }
 
 
-	<!-- Hero
-   =================================================== -->
-	<section id="hero">
+        .parent1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* wrap the images to the next line if there is not enough space */
+            margin-right: 120px;
+            margin-left: 120px;
+            margin-top: 60px;            
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 255, 0);
+        }
 
-		<div class="row hero-content">
+        .parent1 > div {
+            margin: 0 20px;
+            flex-basis: calc(50% - 40px); /* set the width of each image container to 50% minus the margin */
+        }
 
-			<div class="twelve columns flex-container">
+        @media(max-width: 768px) {
+            .parent1 > div {
+                margin: 20px 0;
+                flex-basis: 100%; /* set the width of each image container to 100% on small screens */
+            }
+        }
+        </style>
 
-				<div id="hero-slider" class="flexslider">
+    </head>
 
-					<ul class="slides">
+    <body class="homepage">
 
-						<!-- Slide -->
-						<li>
-							<div class="flex-caption">
-								<h1>Hello, I am <a class="smoothscroll" href="#about" title="">Saleem</a>
-									.</h1>
-								<p><a class="button stroke smoothscroll" href="#about">More About Me</a></p>
-							</div>
-						</li>
-
-						<!-- Slide -->
-						<li>
-							<div class="flex-caption">
-								<h1>I am a creative <a class="smoothscroll" href="#portfolio" title=""> Problem Solver</a></h1>
-								<p><a class="button stroke smoothscroll" href="#portfolio">View my Projects</a></p>
-							</div>
-						</li>
-
-						<!-- Slide -->
-						<li>
-							<div class="flex-caption">
-								<h1>I am <a class="smoothscroll" href="#services" title="">constantly learning</a></h1>
-								<p><a class="button stroke smoothscroll" href="#services">View my skills</a></p>
-							</div>
-							
-						</li>
-						
-					</ul>
-					
-				</div> <!-- .flexslider -->
-				
-			</div> <!-- .flex-container -->
-			
-		</div> <!-- .hero-content -->
-		<!-- Resume link -->
-		
-	</section> <!-- #hero -->
-	
-	<section>
-		
-	</section>
-
-	<!-- Portfolio
-   ================================================== -->
-	<section id="portfolio">
-		<!--<div class = "footer-about" style = "position: relative; bottom: 50px; right: 0px;">
-			<a href="https://drive.google.com/file/d/10vp8CTIVmUMyUnYvo25x2d1QhGi__mYV/view?usp=sharing" target = " ______blank" class="btn btn--stroke u-fullwidth">View My Resume</a>
-		</div> -->
-			
-		<div class="row section-head">
-			<ul class="member-social1">
-				
-
-				<a href="https://github.com/SaleemZYounus" target="_blank"><i class="fa fa-github"></i><div class="hide1">GitHub</div></a>
-				<!--li><a href="https://twitter.com/PianistSupreme" target="_blank"><i class="fa fa-twitter"></i></a></li-->
-				<a href="https://www.linkedin.com/in/saleem-younus/" target="_blank"><i class="fa fa-linkedin"></i><div class="hide2">linkedin</div></a>
-				<a href="https://drive.google.com/file/d/1l42ePguoEBNexx_joQhX7jKWq5-9bWID/view?usp=sharing" target="_blank"><i class="fa fa-file"></i><div class="hide">Resume</div>
-				</a>
-			</ul>
-			<div class="twelve columns">
-
-				<h1>My Projects<span>.</span></h1>
-
-				<hr />
-
-				<p>A collection of my Data Analytics, Programming, and Econometrics projects
-				</p>
-
-			</div>
-
-		</div>
-
-		<div class="row items">
-
-            <div class="twelve columns">
-
-                <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
-
-                    <div class="bgrid item">
-                        <div class="item-wrap">
-
-                            <a href="r-weekday.html">
+        <div id="preloader">
+            <div id="status">
+                <img src="images/loader.gif" height="60" width="60" alt="">
+                <div class="loader">Loading...</div>
+            </div>
+        </div>
 
 
-                                <div class="image-container">
-                                    <div class="overlay">
-                                        <div class="portfolio-item-meta">
-                                            <h5>R Studio: Analysis</h5>
-                                            <p>Market Returns on Weekdays</p>
-                                            
-                                        </div>
-                                    </div>
-                                    <img src="avgreturns.jpeg" class="bottom">
-                                    <img src="rsquare.png" class="top">
+        <!-- Header
+                   =================================================== -->
+        <header id="main-header">
+
+            <div class="row header-inner">
+
+                <div class="logo">
+                    <a class="smoothscroll" href="#hero">Saleem Younus
+
+                    </a>
+                </div>
+
+                <nav id="nav-wrap">
+
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+                        <span class='menu-text'>Show Menu</span>
+                        <span class="menu-icon"></span>
+                    </a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">
+                        <span class='menu-text'>Hide Menu</span>
+                        <span class="menu-icon"></span>
+                    </a>
+
+                    <ul id="nav" class="nav">
+                        <li class="current">
+                            <a class="smoothscroll" href="#hero">Home.</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#portfolio">Projects.</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#services">Skills.</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#about">About.</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html#page-title">Art.</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#team">Contact.</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- /nav-wrap -->
+
+            </div>
+            <!-- /header-inner -->
+
+        </header>
+
+
+        <!-- Hero
+                   =================================================== -->
+        <section id="hero">
+
+            <div class="row hero-content">
+
+                <div class="twelve columns flex-container">
+
+                    <div id="hero-slider" class="flexslider">
+
+                        <ul
+                            class="slides">
+
+                            <!-- Slide -->
+                            <li>
+                                <div class="flex-caption">
+                                    <h1>Hello, I am
+                                        <a class="smoothscroll" href="#about" title="">Saleem</a>
+                                        .</h1>
+                                    <p>
+                                        <a class="button stroke smoothscroll" href="#about">More About Me</a>
+                                    </p>
                                 </div>
-                                <!---->
-                            </a>
+                            </li>
 
+                            <!-- Slide -->
+                            <li>
+                                <div class="flex-caption">
+                                    <h1>I am a creative
+                                        <a class="smoothscroll" href="#portfolio" title="">
+                                            Problem Solver</a>
+                                    </h1>
+                                    <p>
+                                        <a class="button stroke smoothscroll" href="#portfolio">View my Projects</a>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <!-- Slide -->
+                            <li>
+                                <div class="flex-caption">
+                                    <h1>I am
+                                        <a class="smoothscroll" href="#services" title="">constantly learning</a>
+                                    </h1>
+                                    <p>
+                                        <a class="button stroke smoothscroll" href="#services">View my skills</a>
+                                    </p>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- .flexslider -->
+
+                </div>
+                <!-- .flex-container -->
+
+            </div>
+            <!-- .hero-content -->
+            <!-- Resume link -->
+
+        </section>
+        <!-- #hero -->
+
+        <section></section>
+
+        <!-- Portfolio
+                   ================================================== -->
+        <section
+            id="portfolio">
+            <!--<div class = "footer-about" style = "position: relative; bottom: 50px; right: 0px;">
+                        			<a href="https://drive.google.com/file/d/10vp8CTIVmUMyUnYvo25x2d1QhGi__mYV/view?usp=sharing" target = " ______blank" class="btn btn--stroke u-fullwidth">View My Resume</a>
+                        		</div> -->
+
+            <div class="row section-head">
+                <ul class="member-social1">
+
+
+                    <a href="https://github.com/SaleemZYounus" target="_blank">
+                        <i class="fa fa-github"></i>
+                        <div class="hide1">GitHub</div>
+                    </a>
+                    <!--li><a href="https://twitter.com/PianistSupreme" target="_blank"><i class="fa fa-twitter"></i></a></li-->
+                    <a href="https://www.linkedin.com/in/saleem-younus/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                        <div class="hide2">linkedin</div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1l42ePguoEBNexx_joQhX7jKWq5-9bWID/view?usp=sharing" target="_blank">
+                        <i class="fa fa-file"></i>
+                        <div class="hide">Resume</div>
+                    </a>
+                </ul>
+                <div class="twelve columns">
+
+                    <h1>My Projects<span>.</span>
+                    </h1>
+
+                    <hr/>
+
+                    <p>A collection of my Machine Learning, Data Analytics, Finance, and Econometrics projects
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="parent1" style="text-shadow: 0px 0px 5px black;">
+                <div class="image-container1">
+                    <a href="https://github.com/SaleemZYounus/Machine-Learning-Kmeans-Meteorite-Landings/blob/main/collab%20Proj.ipynb" target="_blank">
+                        <img src="sklearn.png" class="tops1">
+                    </a>
+                   
+                        <img src="geodots.png" class="bottoms1">
+                    
+                    <div class="overlay1">
+                        <div class="portfolio-item-meta1">
+                            <h5>Meteorite Landings Data 
+                            </h5>
+                            <p>Kmeans Machine Learning Data Analysis
+                            </p>
                         </div>
                     </div>
-                    <!-- /item -->
-
-
-                    <div class="bgrid item">
-                        <div class="item-wrap">
-
-                            <a href="projects1.html">
-                                <div class="image-container">
-
-                                    <div class="overlay">
-                                        <div class="portfolio-item-meta">
-                                            <h5>Python Projects</h5>
-                                            <p>Ordinary Differential Equations</p>
-                                        </div>
-                                    </div>
-                                    <img src="Pendalum.jpg" class="bottom">
-                                    <img src="pypy.png" class="top">
-                                </div>
-
-                            </a>
-
+                </div>
+                <div class="image-container1">
+                    <a href="https://github.com/SaleemZYounus/Random-Forest-Classier/blob/main/Space%20Mission%20Machine%20Learning.ipynb" target="_blank">
+                        <img src="geop.png" class="top1">
+                    </a>
+                  
+                        <img src="geofill.png" class="bottom1">
+                   
+                    <div class="overlay1">
+                        <div class="portfolio-item-meta1">
+                            <h5>Space Mission Data</h5>
+                            <p>Random Forest Classier Machine Learning</p>
                         </div>
                     </div>
-                    <!-- /item -->
+                </div>
+            </div>
+
+            <div class="row items">
+
+                <div class="twelve columns">
+
+                    <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
 
 
-                    <div class="bgrid stack item">
-                        <div class="item-wrap">
+                        <div class="bgrid item">
+                            <div class="item-wrap">
+                                <a href="r-weekday.html">
 
-                            <a href="projects2.html">
 
+                                    <div class="image-container">
+                                        <div class="overlay">
+                                            <div class="portfolio-item-meta">
+                                                <h5>R Studio: Analysis</h5>
+                                                <p>Market Returns on Weekdays</p>
 
-                                <div class="image-container">
-                                    <div class="overlay">
-                                        <div class="portfolio-item-meta">
-                                            <h5>Collab Research</h5>
-                                            <p>Arch/Garch Models & Forcasting</p>
+                                            </div>
                                         </div>
+                                        <img src="avgreturns.jpeg" class="bottom">
+                                        <img src="rsquare.png" class="top">
                                     </div>
-                                    <img src="forcast.jpeg" class="bottom">
-                                    <img src="1671418973299.png" class="top">
+                                    <!---->
+                                </a>
+
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+
+                        <div class="bgrid item">
+                            <div class="item-wrap">
+
+                                <a href="projects1.html">
+                                    <div class="image-container">
+
+                                        <div class="overlay">
+                                            <div class="portfolio-item-meta">
+                                                <h5>Python Projects</h5>
+                                                <p>Ordinary Differential Equations</p>
+                                            </div>
+                                        </div>
+                                        <img src="Pendalum.jpg" class="bottom">
+                                        <img src="pypy.png" class="top">
+                                    </div>
+
+                                </a>
+
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+
+                        <div class="bgrid stack item">
+                            <div class="item-wrap">
+
+                                <a href="projects2.html">
+
+
+                                    <div class="image-container">
+                                        <div class="overlay">
+                                            <div class="portfolio-item-meta">
+                                                <h5>Collab Research</h5>
+                                                <p>Arch/Garch Models & Forcasting</p>
+                                            </div>
+                                        </div>
+                                        <img src="forcast.jpeg" class="bottom">
+                                        <img src="1671418973299.png" class="top">
+                                    </div>
+
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+                        <div class="bgrid item">
+                            <div class="item-wrap">
+
+                                <a href="https://drive.google.com/file/d/1ynPtqoa6GUhumxWZUvDdXbCYi27yRYxY/view?usp=sharing" target="_blank">
+                                    <div class="image-container">
+                                        <div class="overlay">
+                                            <div class="portfolio-item-meta">
+                                                <h5>Stata: Econometrics</h5>
+                                                <p>
+                                                    Economic Factors on Market Performance</p>
+                                            </div>
+                                        </div>
+                                        <img src="resizedgeo.jpeg" class="bottom">
+                                        <img src="1671419031460.png" class="top">
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+                            <!--
+                                                        			THIS IS DIFFERENT
+                                                        		-->
+
+                        </section>
+                        <!-- /Portfolio -->
+
+                        <div class="footer-about" style="position: sticky; top: 90%; bottom: 10%; right: 470px; z-index: 2;">
+                            <a href="https://drive.google.com/file/d/1l42ePguoEBNexx_joQhX7jKWq5-9bWID/view?usp=sharing" target="_blank" class="btn btn--stroke u-fullwidth">View My Resume</a>
+                        </div>
+
+                        <!-- Services Section
+                                                   ================================================== -->
+                        <section id="services">
+
+                            <div class="row section-head">
+
+                                <div class="twelve columns">
+
+                                    <h1>My Skills<span>.</span>
+                                    </h1>
+
+                                    <hr/>
+
+                                    <p>Overview of my skills
+                                    </p>
+
                                 </div>
 
-                            </a>
+                            </div>
 
+                            <div class="row">
 
-                        </div>
-                    </div>
-                    <!-- /item -->
+                                <div class="twelve columns">
 
-                    <div class="bgrid item">
-                        <div class="item-wrap">
+                                    <div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
 
-                            <a href="https://drive.google.com/file/d/1ynPtqoa6GUhumxWZUvDdXbCYi27yRYxY/view?usp=sharing" target="_blank">
-                                <div class="image-container">
-                                    <div class="overlay">
-                                        <div class="portfolio-item-meta">
-                                            <h5>Stata: Econometrics</h5>
-                                            <p> Economic Factors on Market Performance</p>
+                                        <div class="bgrid first">
+
+                                            <div class="icon-part">
+                                                <i class="icon-eye"></i>
+                                            </div>
+
+                                            <h3>Data Analytics</h3>
+
+                                            <div class="service-content">
+                                                <p>
+                                                    I am well versed in Data Analytics, Econometrics and Data Structuring tools including Python, R, Stata and Excel.
+                                                </p>
+                                            </div>
+
                                         </div>
+                                        <!-- /bgrid -->
+                                        <div class="bgrid">
+
+                                            <div class="icon-part">
+                                                <i class="icon-screen-desktop"></i>
+                                            </div>
+
+                                            <h3>Web/Mobile Development.</h3>
+
+                                            <div class="service-content">
+                                                <p>
+                                                    I have Experience using HTML, CSS, and JavaScript, for Web Development and Web Design, as well IOS Development using Swift 4 and Xcode
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- /bgrid -->
+
+                                        <div class="bgrid">
+
+                                            <div class="icon-part">
+                                                <i class="icon-graph"></i>
+                                            </div>
+
+                                            <h3>Machine Learning.</h3>
+
+                                            <div class="service-content">
+                                                <p>
+                                                    I have utilized Python libraries including SkLearn and Tensorflow to conduct machine learning analysison data sets and time series data to create predictions and groupings.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- /bgrid -->
+                                        <div class="bgrid">
+
+                                            <div class="icon-part">
+                                                <span class="icon-eyeglasses"></span>
+                                            </div>
+
+                                            <h3>Statistical Programming</h3>
+
+                                            <div class="service-content">
+                                                <p>I have experience in Statistical Programming using R and Stata for statistical operations, stats, sampling, bootstrapping, ANOVA testing, Regression, Visualization and more.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- /bgrid -->
+
+                                        <div class="bgrid">
+
+                                            <div class="icon-part" style="width: 80px; height: 80px;">
+                                                <i>
+                                                    <img src="algotrade.gif" alt="chart move" style="padding: 0px 10px 10px 10px;">
+                                                </i>
+                                            </div>
+
+                                            <h3>Quantitative Trading</h3>
+
+                                            <div class="service-content">
+                                                <p>
+                                                    Quantitative Trading, Using Algorithms implementing technical and fundamental Strategies in Python and C using QuantConnect.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- /bgrid -->
+
+                                        <div class="bgrid">
+
+                                            <div class="icon-part">
+                                                <i class="icon-film"></i>
+                                            </div>
+
+                                            <h3>3D & Graphic Design & Editing.</h3>
+
+                                            <div class="service-content">
+                                                <p>
+                                                    I have much experience in graphic editing and design for use in social media and advertisements as well as 3D modeling experience using AutoCAD and Autodesk Inventor.
+                                                                                                        								Editing with concentration in optimization of visual projects over various forms of media.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- /bgrid -->
+
                                     </div>
-                                    <img src="resizedgeo.jpeg" class="bottom">
-                                    <img src="1671419031460.png" class="top">
+                                    <!-- /service-list -->
+
+                                </div>
+                                <!-- /twelve -->
+
+                            </div>
+                            <!-- /row -->
+
+                        </section>
+                        <!-- /services -->
+
+
+                        <!-- About Section
+                                                   ================================================== -->
+                        <section id="about">
+
+                            <div class="row section-head">
+
+                                <div class="twelve columns">
+
+                                    <h1>About Me<span>.</span>
+                                    </h1>
+
+                                    <hr/>
+
+                                    <p>
+                                        I am a 19 year old self taught stock, options and crypto trader seeking a Job or Internship in Data Science, Economics, Trading,
+                                                                                					Finance, or IT. I would like to expand my knowledge and experience in the Data Analytics, Economics, Computer Programming, Mathematics, the Stock Market, Art and Music.
+                                    </p>
+                                    <p>
+                                        I am a Senior at Lake Forest College pursuing a
+                                                                                					Bachelor of Arts degree in Economics and Data Science. I am an avid self-taught drummer,
+                                                                                					pianist & artist.
+                                    </p>
+
                                 </div>
 
-                            </a>
+                            </div>
 
-                        </div>
+                            <div class="row about-content">
 
-		<!--
-			THIS IS DIFFERENT
-		-->
-		
-	</section> <!-- /Portfolio -->
+                                <div class="mob-whole six columns left">
 
-	<div class = "footer-about" style = "position: sticky; top: 90%; bottom: 10%; right: 470px; z-index: 2;">
-		<a href="https://drive.google.com/file/d/1l42ePguoEBNexx_joQhX7jKWq5-9bWID/view?usp=sharing" target = "_blank" class="btn btn--stroke u-fullwidth">View My Resume</a>
-	</div>
+                                    <h3>Student: Lake Forest College</h3>
 
-	<!-- Services Section
-   ================================================== -->
-	<section id="services">
+                                    <p>Double Majoring in Economics and Data Science</p>
 
-		<div class="row section-head">
+                                </div>
+                                <!-- /left -->
 
-			<div class="twelve columns">
+                                <div class="mob-whole six columns right">
 
-				<h1>My Skills<span>.</span></h1>
+                                    <h3>Trading: Stocks, Options, Crypto</h3>
 
-				<hr />
+                                    <p>
+                                        3 years experience in researching, trading, and investing stocks, options, crypto using fundamental and technical analysis
+                                    </p>
 
-				<p>Overview of my skills
-				</p>
+                                </div>
+                                <!-- /right -->
 
-			</div>
+                            </div>
+                            <!-- /row -->
 
-		</div>
+                            <div class="row about-content">
 
-		<div class="row">
+                                <div class="mob-whole six columns left">
 
-			<div class="twelve columns">
+                                    <h3>Music: Piano, Drums, Cello, Flute</h3>
 
-				<div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
-					
-					<div class="bgrid first">
+                                    <p>
+                                        Self taught musician and composer and Performer of multiple instruments. View my Compositions
+                                        <a class="button" href="https://www.noteflight.com/scores/view/cc7ef38074dd037fdc7bbbccc431835f95c87a8c" target="____blank">here</a>
+                                    </p>
 
-						<div class="icon-part">
-							<i class="icon-eye"></i>
-						</div>
+                                </div>
+                                <!-- /left -->
 
-						<h3>Data Analytics</h3>
+                                <div class="mob-whole six columns right">
 
-						<div class="service-content">
-							<p>
-								I am well versed in Data Analytics, Econometrics and Data Structuring tools including Python, R, Stata and Excel.							</p>
-						</div>
+                                    <h3>Art: Drawing, Painting, Watercolor, Digital, 3D Modeling</h3>
 
-					</div> <!-- /bgrid -->	
-					<div class="bgrid">
+                                    <p>
+                                        Self taught artist in multiple media types
+                                    </p>
 
-						<div class="icon-part">
-							<i class="icon-screen-desktop"></i>
-						</div>
+                                </div>
+                                <!-- /right -->
 
-						<h3>Web Development.</h3>
+                            </div>
 
-						<div class="service-content">
-							<p>
-								I have Experience using HTML, CSS, and JavaScript, for Web Development and Web Design, as well as website builders such as Weebly
-							</p>
-						</div>
 
-					</div> <!-- /bgrid -->
-					
-					<div class="bgrid">
+                            <!-- team
+                                                           	=================================================== -->
+                            <div id='team'>
 
-						<div class="icon-part">
-							<i class="icon-eyeglasses"></i>
-						</div>
+                                <div class="row team section-head">
 
-						<h3>Mobile Development.</h3>
+                                    <div class="twelve columns">
 
-						<div class="service-content">
-							<p>
-								I have Experience in IOS Development using Swift 4 and Xcode
-							</p>
-						</div>
+                                        <h1>Contact me<span>.</span>
+                                        </h1>
 
-					</div> <!-- /bgrid -->
-					<div class="bgrid">
+                                        <hr/>
 
-						<div class="icon-part">
-							<span class="icon-graph"></span>
-						</div>
+                                            <p></p>
 
-						<h3>Statistical Programming</h3>
+                                        </div>
 
-						<div class="service-content">
-							<p>I have experience in Statistical Programming using R and Stata for statistical operations, stats, sampling, bootstrapping, ANOVA testing, Regression, Visualization and more.
-							</p>
-						</div>
+                                    </div>
 
-					</div> <!-- /bgrid -->
+                                    <div class="row about-content">
 
-					<div class="bgrid">
+                                        <div class="twelve columns">
 
-						<div class="icon-part"  style="width: 80px; height: 80px;">
-							<i>
-								<img src="algotrade.gif" alt="chart move" style="padding: 0px 10px 10px 10px;">
-							</i>
-						</div>
+                                            <div id="team-wrapper" class="mob-bgrid-whole group">
 
-						<h3>Quantitative Trading</h3>
+                                                <div class="member">
 
-						<div class="service-content">
-							<p>
-								Quantitative Trading, Using Algorithms implementing technical and fundamental Strategies in Python and C using QuantConnect.
-							</p>
-						</div>
+                                                    <div class="member-header">
 
-					</div> <!-- /bgrid -->
+                                                        <div class="member-pic">
+                                                            <img src="images/team/saleembw2.jpeg" alt=""/>
+                                                        </div>
 
-					<div class="bgrid">
+                                                        <div class="member-name">
+                                                            <h3>Saleem Younus</h3>
+                                                            <span>Student / Coder / Trader / Musician</span>
+                                                        </div>
 
-						<div class="icon-part">
-							<i class="icon-film"></i>
-						</div>
+                                                    </div>
 
-						<h3>3D & Graphic Design & Editing.</h3>
+                                                    <p>
+                                                        Contact me by email:
+                                                                                                                								saleemyounus33@gmail.com and view my activities on the following platforms
+                                                    </p>
 
-						<div class="service-content">
-							<p>
-								I have much experience in graphic editing and design for use in social media and advertisements as well as 3D modeling experience using AutoCAD and Autodesk Inventor.
-								Editing with concentration in optimization of visual projects over various forms of media.
-							</p>
-						</div>
+                                                    <ul class="member-social">
+                                                        <li>
+                                                            <a href="https://github.com/SaleemZYounus" target="_blank">
+                                                                <i class="fa fa-github"></i>
+                                                            </a>
+                                                        </li>
+                                                        <!--li><a href="https://twitter.com/PianistSupreme" target="_blank"><i class="fa fa-twitter"></i></a></li-->
+                                                        <li>
+                                                            <a href="https://www.linkedin.com/in/saleem-younus/" target="_blank">
+                                                                <i class="fa fa-linkedin"></i>
+                                                            </a>
+                                                        </li>
 
-					</div> <!-- /bgrid -->
+                                                    </ul>
 
-				</div> <!-- /service-list -->
+                                                </div>
+                                                <!-- /member -->
 
-			</div> <!-- /twelve -->
 
-		</div> <!-- /row -->
+                                            </div>
+                                            <!-- /twelve -->
 
-	</section> <!-- /services -->
+                                        </div>
+                                        <!-- /team-wrapper -->
 
+                                    </div>
+                                    <!-- /row -->
 
-	<!-- About Section
-   ================================================== -->
-	<section id="about">
+                                </div>
+                                <!-- /team -->
 
-		<div class="row section-head">
+                            </section>
+                            <!-- /about -->
 
-			<div class="twelve columns">
 
-				<h1>About Me<span>.</span></h1>
+                            <!-- journal
+                                                           =================================================== -->
 
-				<hr />
 
-				<p>
-					I am a 19 year old self taught stock, options and crypto trader seeking a Job or Internship in Data Science, Economics, Trading,
-					Finance, or IT. I would like to expand my knowledge and experience in the Data Analytics, Economics, Computer Programming, Mathematics, the Stock Market, Art and Music.
-				</p>
-				<p>
-					I am a Senior at Lake Forest College pursuing a
-					Bachelor of Arts degree in Economics and Data Science. I am an avid self-taught drummer,
-					pianist & artist.
-				</p>
+                            <!-- Contact Section
+                                                           ================================================== -->
 
-			</div>
 
-		</div>
+                            <!-- Footer
+                                                           ================================================== -->
+                                <footer>
 
-		<div class="row about-content">
+                                    <div class="row"> <p class="copyright" style="position: sticky; z-index: 3;">
+                                        &copy; Copyright 2023 Saleem Younus. Design by
+                                        <a href="http://www.styleshout.com/">Styleshout.</a>
+                                    </p>
 
-			<div class="mob-whole six columns left">
+                                    <div id="go-top">
+                                        <a class="smoothscroll" title="Back to Top" href="#hero">
+                                            <span>Top</span>
+                                            <i class="fa fa-long-arrow-up"></i>
+                                        </a>
+                                    </div>
 
-				<h3>Student: Lake Forest College</h3>
+                                </div>
+                                <!-- /row -->
 
-				<p>Double Majoring in Economics and Data Science</p>
+                            </footer>
+                            <!-- /footer -->
 
-			</div> <!-- /left -->
 
-			<div class="mob-whole six columns right">
+                            <!-- Java Script
+                                                           ================================================== -->
+                            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                            <script>
+                                window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
+                            </script>
+                            <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+                            <script src="js/jquery.flexslider.js"></script>
+                            <script src="js/jquery.fittext.js"></script>
+                            <script src="js/backstretch.js"></script>
+                            <script src="js/waypoints.js"></script>
+                            <script src="js/main.js"></script>
 
-				<h3>Trading: Stocks, Options, Crypto</h3>
+                        </body>
 
-				<p> 3 years experience in researching, trading, and investing stocks, options, crypto using fundamental and technical analysis  </p>
-
-			</div> <!-- /right -->
-
-		</div> <!-- /row -->
-
-		<div class="row about-content">
-
-			<div class="mob-whole six columns left">
-
-				<h3>Music: Piano, Drums, Cello, Flute</h3>
-
-				<p> Self taught musician and composer and Performer of multiple instruments. View my Compositions <a class="button" href="https://www.noteflight.com/scores/view/cc7ef38074dd037fdc7bbbccc431835f95c87a8c" target="____blank">here</a></p>
-
-			</div> <!-- /left -->
-
-			<div class="mob-whole six columns right">
-
-				<h3>Art: Drawing, Painting, Watercolor, Digital, 3D Modeling</h3>
-
-				<p> Self taught artist in multiple media types </p>
-
-			</div> <!-- /right -->
-
-		</div>
-
-
-		<!-- team
-   	=================================================== -->
-		<div id='team'>
-
-			<div class="row team section-head">
-
-				<div class="twelve columns">
-
-					<h1>Contact me<span>.</span></h1>
-
-					<hr />
-
-					<p>
-					</p>
-
-				</div>
-
-			</div>
-
-			<div class="row about-content">
-
-				<div class="twelve columns">
-
-					<div id="team-wrapper" class="mob-bgrid-whole group">
-
-						<div class="member">
-
-							<div class="member-header">
-
-								<div class="member-pic">
-									<img src="images/team/saleembw2.jpeg" alt="" />
-								</div>
-
-								<div class="member-name">
-									<h3>Saleem Younus</h3>
-									<span>Student / Coder / Trader / Musician</span>
-								</div>
-
-							</div>
-
-							<p>
-								Contact me by email:
-								saleemyounus33@gmail.com and view my activities on the following platforms </p>
-							
-							<ul class="member-social">
-								<li><a href="https://github.com/SaleemZYounus" target="_blank"><i class="fa fa-github"></i></a></li>
-								<!--li><a href="https://twitter.com/PianistSupreme" target="_blank"><i class="fa fa-twitter"></i></a></li-->
-								<li><a href="https://www.linkedin.com/in/saleem-younus/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-
-							</ul>
-
-						</div> <!-- /member -->
-
-
-
-					</div> <!-- /twelve -->
-
-				</div> <!-- /team-wrapper -->
-
-			</div> <!-- /row -->
-
-		</div> <!-- /team -->
-	 
-	</section> <!-- /about -->
-
-
-	<!-- journal
-   =================================================== -->
-
-
-
-	<!-- Contact Section
-   ================================================== -->
-
-
-	<!-- Footer
-   ================================================== -->
-	<footer>
-
-		<div class="row">
-
-			<p class = "copyright" style = "position: sticky; z-index: 3;"> &copy; Copyright 2023 Saleem Younus. Design by <a
-					href="http://www.styleshout.com/">Styleshout.</a></p>
-
-			<div id="go-top">
-				<a class="smoothscroll" title="Back to Top" href="#hero"><span>Top</span><i
-						class="fa fa-long-arrow-up"></i></a>
-			</div>
-
-		</div> <!-- /row -->
-
-	</footer> <!-- /footer -->
-
-
-	<!-- Java Script
-   ================================================== -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
-	<script src="js/jquery.fittext.js"></script>
-	<script src="js/backstretch.js"></script>
-	<script src="js/waypoints.js"></script>
-	<script src="js/main.js"></script>
-
-</body>
-
-</html>
+                    </html>
